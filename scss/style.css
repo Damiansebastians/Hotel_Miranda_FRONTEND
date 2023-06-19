@@ -6,4 +6,46 @@
 
 body {
   min-width: 320px;
+}
+
+@media only screen and (min-width: 320px) {
+  .header {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  }
+  .header__logo, .header__user-button, .header__search-button {
+    padding: 5px;
+  }
+  .header__menu {
+    display: none;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .header__menu__item {
+    padding: 5px;
+  }
+  .header .menu-icon {
+    cursor: pointer;
+  }
+  .header .menu-icon__image {
+    width: 25px;
+    height: 25px;
+  }
+  .header.menu-open .menu-icon__image {
+    display: none;
+  }
+  .header.menu-open .menu-icon::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/open_menu_mobile.png");
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
