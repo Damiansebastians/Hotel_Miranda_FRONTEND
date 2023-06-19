@@ -1,22 +1,19 @@
-///----------------------MENU MOBILE---------------------------
+///-----------MENU MOBILE---------------------
 
-let menuToggle = document.querySelector(".menu-icon");
-let menuItems = document.querySelector(".menu");
-let menuImageOpen = document.querySelector(".menu-icon__image__open");
-let menuImageClose = document.querySelector(".menu-icon__image__close");
+const toggleMenu = document.querySelector('.toggle__menu');
+const menuMobile = document.querySelector('.menu__mobile');
+const closeImage = document.querySelector('.toggle__menu__close');
+const openImage = document.querySelector('.toggle__menu__open');
 
-function toggleMenu() {
-  menuItems.classList.toggle("menu-open");
-  menuImageOpen.classList.toggle("hidden");
-  menuImageClose.classList.toggle("hidden");
-}
-
-menuToggle.addEventListener("click", toggleMenu);
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 999) {
-    menuItems.classList.remove("menu-open");
-    menuImageOpen.classList.remove("hidden");
-    menuImageClose.classList.add("hidden");
+toggleMenu.addEventListener('click', () => {
+  if (menuMobile.style.display === 'none') {
+    menuMobile.style.display = 'block';
+    closeImage.style.display = 'block';
+    openImage.style.display = 'none';
+  } else {
+    menuMobile.style.display = 'none';
+    closeImage.style.display = 'none';
+    openImage.style.display = 'block';
   }
 });
+

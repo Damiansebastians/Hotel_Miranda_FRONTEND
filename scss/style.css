@@ -10,42 +10,45 @@ body {
 
 @media only screen and (min-width: 320px) {
   .header {
+    position: relative;
     background-color: #ffffff;
     color: #000000;
   }
   .header__navbar {
     display: flex;
+    padding: 15px 15px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   }
-  .header__logo, .header__user-button, .header__search-button {
+  .header__toggle, .header__logo, .header__user-button, .header__search-button {
     padding: 5px;
   }
-  .header__menu {
+  .header__item {
+    padding: 5px;
+  }
+  .header .toggle__menu {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  .header .toggle__menu__close {
     display: none;
+  }
+  .header .menu__mobile {
+    width: 100%;
+    position: absolute;
+    top: 100%;
     background-color: #ffffff;
     color: #000000;
+    margin-top: 10px;
   }
-  .header__menu__item {
-    padding: 5px;
-  }
-  .header .menu-icon {
-    cursor: pointer;
-  }
-  .header .menu-icon__image {
-    width: 25px;
-    height: 25px;
-  }
-  .header.menu-open .menu-icon__image {
-    display: none;
-  }
-  .header.menu-open .menu-icon::before {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/open_menu_mobile.png");
-    background-size: cover;
+  .header .menu__mobile .menu__item {
+    font-family: archivo;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 10px;
+    list-style-type: none;
   }
 }/*# sourceMappingURL=style.css.map */
