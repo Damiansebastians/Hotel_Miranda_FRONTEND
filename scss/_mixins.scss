@@ -1,0 +1,55 @@
+
+@mixin banner-text {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    line-height: 127%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+    }
+
+    @mixin description-text {
+        font-family: "Old Standard TT", serif;
+        font-style: regular;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: -1.2px;
+        color: #FFFFFF;
+    }
+
+    @mixin boton-take {
+        font-family: 'Archivo';
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: 2.8px;
+        background-color: #BEAD8E;
+        color: #FFFFFF;
+        width: 217px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    @mixin boton-learn {
+        font-family: 'Archivo';
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: 2.8px;
+        background-color: #333333;
+        color:  #FFFFFF;
+        width: 217px;
+        height: 60px;
+        cursor: pointer;
+    }
+

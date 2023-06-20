@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500&display=swap");
 @media only screen and (min-width: 320px) {
   .header {
+    position: relative;
     background-color: #ffffff;
     color: #000000;
   }
   .header__navbar {
     width: 100%;
-    position: fixed;
     display: flex;
     padding: 15px 15px;
     align-items: center;
@@ -30,17 +31,82 @@
     width: 100%;
     position: absolute;
     top: 100%;
+    left: 0px;
     background-color: #ffffff;
     color: #000000;
-    margin-top: 10px;
   }
   .header .menu__mobile .menu__item {
-    font-family: archivo;
+    font-family: "Archivo";
     font-weight: bold;
     font-size: 16px;
     line-height: 17px;
     padding: 10px;
+    margin-left: 15px;
     list-style-type: none;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding-left: 20px;
+  }
+  .banner__title {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    line-height: 127%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+    margin-top: 75px;
+    width: 75%;
+  }
+  .banner__description {
+    font-family: "Old Standard TT", serif;
+    font-style: regular;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-top: 40px;
+  }
+  .banner__buttons .banner__button--primary {
+    margin-top: 40px;
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+  }
+  .banner__buttons .banner__button--secondary {
+    margin-top: 24px;
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
   }
 }
 * {
