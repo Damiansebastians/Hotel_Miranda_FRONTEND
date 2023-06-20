@@ -23,7 +23,7 @@
         color: #FFFFFF;
     }
 
-    @mixin boton-take {
+    @mixin boton-gold {
         font-family: 'Archivo';
         font-weight: bold;
         font-size: 14px;
@@ -31,7 +31,7 @@
         text-align: center;
         vertical-align: top;
         letter-spacing: 2.8px;
-        background-color: #BEAD8E;
+        background-color: $gold-color;
         color: #FFFFFF;
         width: 217px;
         height: 60px;
@@ -63,4 +63,20 @@
         color: #FFFFFF;
 }
 
+    @mixin section-title{
+        font-family: "Old Standard TT", serif;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 30px;
+        vertical-align: top;
+        letter-spacing: -0.9px;
+    }
+
+    @mixin section-description {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 22px;
+        vertical-align: top;
+    }
 
