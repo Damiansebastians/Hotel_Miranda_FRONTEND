@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 @media only screen and (min-width: 320px) {
   .header {
+    position: relative;
     background-color: #ffffff;
     color: #000000;
   }
   .header__navbar {
     width: 100%;
-    position: fixed;
     display: flex;
     padding: 15px 15px;
     align-items: center;
@@ -30,17 +31,135 @@
     width: 100%;
     position: absolute;
     top: 100%;
+    left: 0px;
     background-color: #ffffff;
     color: #000000;
-    margin-top: 10px;
   }
   .header .menu__mobile .menu__item {
-    font-family: archivo;
+    font-family: "Archivo";
     font-weight: bold;
     font-size: 16px;
     line-height: 17px;
     padding: 10px;
+    margin-left: 15px;
     list-style-type: none;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding-left: 20px;
+  }
+  .banner__title {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    line-height: 127%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+    margin-top: 75px;
+    width: 75%;
+  }
+  .banner__description {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-top: 40px;
+  }
+  .banner__buttons .banner__button--primary {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 40px;
+    display: block;
+  }
+  .banner__buttons .banner__button--secondary {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    margin: 24px 0px 75px;
+    display: block;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .availability {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    padding-left: 20px;
+  }
+  .availability__label {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: top;
+    color: #FFFFFF;
+    margin: 35px 0px 24px;
+  }
+  .availability__input {
+    width: 90%;
+    max-width: 350px;
+    border: none;
+    border-bottom: 2px solid #BEAD8E;
+    background-color: #222222;
+    color: #686868;
+    padding: 0px;
+    cursor: pointer;
+  }
+  .availability .availability__input::-webkit-calendar-picker-indicator {
+    order: -1;
+    filter: invert(0.5) sepia(1);
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  .availability__button {
+    margin: 42px 0px 36px;
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    width: 250px;
   }
 }
 * {

@@ -1,0 +1,46 @@
+@import "variables";
+@import 'mixins';
+
+// BANNER
+
+@media only screen and (min-width: 320px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        background-color: $banner-bg-color;
+        color: #FFFFFF;
+        padding-left: 20px;
+
+            
+            &__title {
+                @include banner-text;
+                margin-top: 75px;
+                width: 75%;
+            }
+
+            &__description {
+                @include description-text;
+                margin-top: 40px;
+            }
+
+        &__buttons {
+
+            .banner__button--primary {
+                @include boton-take;
+                margin-top: 40px;
+                display: block;
+                }
+                
+            .banner__button--secondary {
+                @include boton-learn;
+                margin: 24px 0px 75px;
+                display: block;
+            }
+        }
+    }
+
+
+
+
+}

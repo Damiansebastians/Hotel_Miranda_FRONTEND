@@ -5,12 +5,12 @@
 @media only screen and (min-width: 320px) {
 
     .header {
+        position: relative;
         background-color: $header-bg-color;
         color: $header-color;
         
         &__navbar {
             width: 100%;
-            position: fixed;
             display: flex;
             padding: 15px 15px;
             align-items: center;
@@ -43,16 +43,17 @@
             width: 100%;
             position: absolute;
             top: 100%;
+            left: 0px;
             background-color: $header-bg-color;
             color: $header-color;
-            margin-top: 10px;
 
             .menu__item{
-            font-family: archivo;
+            font-family: 'Archivo';
             font-weight: bold;
             font-size: 16px;
             line-height: 17px;
             padding: 10px;
+            margin-left: 15px;
             list-style-type: none;
             }
         }
