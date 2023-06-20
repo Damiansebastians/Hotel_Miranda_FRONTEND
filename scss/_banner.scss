@@ -27,13 +27,15 @@
         &__buttons {
 
             .banner__button--primary {
-                    margin-top: 40px;
-                    @include boton-take;
+                @include boton-take;
+                margin-top: 40px;
+                display: block;
                 }
                 
             .banner__button--secondary {
-                margin-top: 24px;
-                    @include boton-learn;
+                @include boton-learn;
+                margin: 24px 0px 75px;
+                display: block;
             }
         }
     }

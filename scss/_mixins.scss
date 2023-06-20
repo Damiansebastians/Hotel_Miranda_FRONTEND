@@ -14,7 +14,7 @@
 
     @mixin description-text {
         font-family: "Old Standard TT", serif;
-        font-style: regular;
+        font-style: normal;
         font-size: 56px;
         line-height: 60px;
         text-align: left;
@@ -28,7 +28,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 15px;
-        text-align: left;
+        text-align: center;
         vertical-align: top;
         letter-spacing: 2.8px;
         background-color: #BEAD8E;
@@ -43,7 +43,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 15px;
-        text-align: left;
+        text-align: center;
         vertical-align: top;
         letter-spacing: 2.8px;
         background-color: #333333;
@@ -52,4 +52,15 @@
         height: 60px;
         cursor: pointer;
     }
+
+    @mixin text-label {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        vertical-align: top;
+        color: #FFFFFF;
+}
+
 
