@@ -19,6 +19,7 @@
 
         &__input {
             width: 90%;
+            max-width: 350px;
             border: none;
             border-bottom: 2px solid $gold-color;
             background-color: $availability-bg-color;
@@ -32,7 +33,7 @@
                 filter: invert(0.5) sepia(1);
                 width: 1rem;
                 height: 1rem;
-                margin-right: 0.55rem;
+                margin-right: 0.50rem;
     }
 
         &__button {
