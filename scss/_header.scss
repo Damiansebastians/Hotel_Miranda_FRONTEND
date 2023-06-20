@@ -1,0 +1,80 @@
+@import "variables";
+
+// HEADER
+
+@media only screen and (min-width: 320px) {
+
+    .header {
+        position: relative;
+        background-color: $header-bg-color;
+        color: $header-color;
+
+        &__navbar {
+            display: flex;
+            padding: 15px 15px;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+        }
+
+        &__toggle,
+        &__logo,
+        &__user-button,
+        &__search-button {
+            padding: $menu-padding;
+        }
+
+        &__item {
+            padding: $menu-padding;
+        }
+
+        .toggle__menu {
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+
+            &__close {
+                display: none;
+            }
+        }
+
+        .menu__mobile {
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            background-color: $header-bg-color;
+            color: $header-color;
+            margin-top: 10px;
+
+            .menu__item{
+            font-family: archivo;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 17px;
+            padding: 10px;
+            list-style-type: none;
+            }
+        }
+    }
+
+}
+
+// VERSION DESKTOP
+
+//     @media screen and (min-width: 1000px) {
+
+//     .header{
+
+//         &__menu {
+//             display: block;
+//         }
+
+//         &__navbar {
+//             justify-content: space-between;
+//         }
+//         .menu__mobile {
+//             width: 100%;
+//             position: relative;
+//         }
+//     }
+// }
