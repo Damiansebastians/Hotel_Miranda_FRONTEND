@@ -49,15 +49,21 @@
             @include info-description;
             margin-top: 12px;
         }
-
+        
         &__cost {
-            display: inline;
-            
+            text-align: center;
+            margin: 12px 0px 19px;
+
+            p{
+                display: inline;
+            }
+
             p:nth-child(1){
                 @include info-cost(40px)
             }
             p:nth-child(2){
-                @include info-cost(13px)
+                @include info-cost(13px);
+                line-height: 63px;
             }
         }
     }

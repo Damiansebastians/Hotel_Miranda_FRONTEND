@@ -356,6 +356,10 @@
   margin-top: 12px;
 }
 .rooms__info__cost {
+  text-align: center;
+  margin: 12px 0px 19px;
+}
+.rooms__info__cost p {
   display: inline;
 }
 .rooms__info__cost p:nth-child(1) {
@@ -375,6 +379,7 @@
   text-align: center;
   vertical-align: top;
   color: #BEAD8E;
+  line-height: 63px;
 }
 
 * {
