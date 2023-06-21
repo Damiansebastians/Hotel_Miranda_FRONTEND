@@ -80,3 +80,57 @@
         vertical-align: top;
     }
 
+    //ROOMS
+
+    @mixin rooms-title {
+        font-family: 'Archivo';
+        font-style: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: 2.8px;
+        color: #777777;
+    }
+
+    @mixin rooms-description {
+        font-family: "Old Standard TT";
+        font-style: normal;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: -1.2px;
+        color: #222222;
+    }
+
+    @mixin info-title {
+        font-family: "Old Standard TT", serif;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: -1.2px;
+        color: #222222;
+    }
+
+    @mixin info-description {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: top;
+        margin-bottom: 24px;
+        color: #777777;
+    }
+
+    @mixin info-cost($font-size) {
+        font-family: "Archivo", sans-serif;
+        font-style: bold;
+        font-size: $font-size;
+        line-height: 43px;
+        text-align: center;
+        vertical-align: top;
+        color: #BEAD8E;
+      }
+      
