@@ -536,7 +536,7 @@
   .facilities__box__pages {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin: 32px 0px 65px;
   }
   .facilities__box__pages img {
     cursor: pointer;
