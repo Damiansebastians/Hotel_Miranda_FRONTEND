@@ -1,0 +1,61 @@
+@import "variables";
+@import 'mixins';
+
+// MENU
+
+@media only screen and (min-width: 320px) {
+
+    .menu {
+        padding-left: 20px;
+
+        &__image {
+            text-align: end;
+        }
+
+        &__title {
+            @include rooms-title;
+            text-align: left;
+            margin-top: 0.5px;
+
+        }
+
+        &__description {
+            @include rooms-description;
+        }
+
+        &__item {
+            &__image {
+                /* Estilos para el contenedor de la imagen del ítem */
+
+                img {
+                    /* Estilos para la imagen del ítem */
+                }
+            }
+
+            &__details {
+                /* Estilos para los detalles del ítem */
+
+                &__subtitle {
+                    /* Estilos para el subtítulo del ítem */
+                }
+
+                &__text {
+                    /* Estilos para el texto del ítem */
+                }
+            }
+        }
+
+        &__buttons {
+            /* Estilos para el contenedor de los botones */
+
+            button {
+                /* Estilos para los botones */
+            }
+        }
+
+        &__slider {
+            /* Estilos para el contenedor del slider */
+        }
+    }
+
+}
