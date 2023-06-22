@@ -734,6 +734,11 @@
     margin-bottom: 48px;
   }
 }
+@media only screen and (min-width: 320px) {
+  .footer {
+    background-image: url(".././img/background_footer_mobile.png");
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

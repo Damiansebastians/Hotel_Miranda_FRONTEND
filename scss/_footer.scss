@@ -1,0 +1,75 @@
+@import "variables";
+@import 'mixins';
+
+// FOOTER
+
+@media only screen and (min-width: 320px) {
+
+    .footer {
+        background-image: url(".././img/background_footer_mobile.png");
+
+        &__logo {
+            // Estilos para el contenedor del logo
+
+            &--image {
+                // Estilos para la imagen del logo
+            }
+        }
+
+        &__description {
+            // Estilos para la descripción
+        }
+
+        &__socials {
+            // Estilos para el contenedor de los íconos de redes sociales
+
+            &--image {
+                // Estilos para la imagen de los íconos de redes sociales
+            }
+        }
+
+        &__title {
+            // Estilos para el título de los servicios
+        }
+
+        &__list {
+            // Estilos para el contenedor de la lista de servicios
+
+            &__ul {
+                // Estilos para la lista de servicios
+
+                &--item {
+                    // Estilos para los elementos de la lista de servicios
+                }
+            }
+        }
+
+        &__contact {
+            // Estilos para el título de contacto
+        }
+
+        &__phone {
+            // Estilos para el contenedor de los números de teléfono
+
+            &__number {
+                // Estilos para cada número de teléfono
+            }
+        }
+    }
+
+    .finish {
+        // Estilos para el contenedor de la sección "finish"
+
+        &__copyright {
+            // Estilos para el texto de derechos de autor
+        }
+
+        &__terms {
+            // Estilos para el texto de términos y políticas
+        }
+    }
+
+
+
+
+}
