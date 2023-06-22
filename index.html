@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./scss/style.css">
     <title>Hotel Miranda</title>
 </head>
@@ -53,31 +56,65 @@
 
             <button class="availability__button">CHECK AVAILABILITY</button>
         </section>
-        
+
         <!-- ABOUT US -->
         <article class="about">
             <p class="about__text">ABOUT US</p>
             <h2 class="about__title">Discover Our Underground.</h2>
-            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button class="about__button">BOOK NOW</button>
             <div class="about__image">
-                <img src="" alt="">
+                <img class="about__image__team" src="./img/sliders/strong1.jpg" alt="strong team">
             </div>
             <div class="about__section">
                 <img class="about__section__vector" src="./img/gobbler_strong_mobile.png" alt="Globber">
                 <h3 class="about__section__title">Strong Team</h3>
-                <p class="about__section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <p class="about__section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor.</p>
             </div>
             <div class="about__image">
-                <img src="" alt="">
+                <img class="about__image__team" src="./img/sliders/strong2.jpg" alt="strong team">
             </div>
             <div class="about__section2">
                 <img class="about__section2__vector" src="./img/gobbler_luxery_mobile.png" alt="Globber">
                 <h3 class="about__section2__title">Strong Team</h3>
-                <p class="about__section2__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <p class="about__section2__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor.</p>
             </div>
         </article>
 
+        <!-- ROOMS -->
+        <section class="rooms">
+            <p class="rooms__title">ROOMS</p>
+            <h2 class="rooms__description">Hand Picked Rooms</h2>
+            <div class="rooms__icons">
+                <img class="rooms__icons__image" src="./img/icons__mobile.svg" alt="">
+            </div>
+            <div class="rooms__slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/sliders/room1.jpg" alt="Rooms"></div>
+                        <div class="swiper-slide"><img src="./img/sliders/room2.jpg" alt="Rooms"></div>
+                        <div class="swiper-slide"><img src="./img/sliders/room3.jpg" alt="Rooms"></div>
+                        <div class="swiper-slide"><img src="./img/sliders/room4.jpg" alt="Rooms"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+            <div class="rooms__info">
+                <h3 class="rooms__info__title">Minimal Duplex Room</h3>
+                <p class="rooms__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore.</p>
+                <div class="rooms__info__cost">
+                    <p>$345</p>
+                    <p>/Night</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 

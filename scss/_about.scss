@@ -5,115 +5,123 @@
 
 @media only screen and (min-width: 320px) {
 
-        .about {
-            display: flex;
-            flex-direction: column;
-            padding-left: 20px;
-            margin-top: 100px;
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 100px;
 
-            &__text {
-                font-family: 'Archivo';
-                font-weight: bold;
-                font-size: 13px;
-                line-height: 18px;
-                letter-spacing: 2.8px;
-                color: #777777;
+        &__text {
+            font-family: 'Archivo';
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 2.8px;
+            color: #777777;
+        }
+
+        &__title {
+            font-family: "Old Standard TT";
+            font-size: 3.5rem;
+            text-align: center;
+            vertical-align: top;
+            letter-spacing: -1.2px;
+            color: #111111;
+            margin-top: 32px;
+            margin-right: 30px;
+        }
+
+        &__description {
+            font-family: 'Archivo';
+            font-size: 14px;
+            line-height: 24px;
+            color: #777777;
+            text-align: left;
+            vertical-align: top;
+            margin-top: 16px;
+            margin-right: 20px;
+        }
+
+        &__button {
+            @include boton-gold;
+            border: 2px solid #ffffff;
+            margin-top: 24px;
+        }
+
+        &__image {
+            width: 70%;
+            height: 300px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 270px;
+            background-color: #E4E4E4;
+            margin: 60px 14% 0px 14%;
+            margin-left: 0px;
+
+                &__team{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    max-width: 100%;
+                    max-height: 100%;
+            }
+        }
+
+        &__section {
+            text-align: center;
+            width: 70%;
+            height: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+            min-width: 270px;
+            background-color: #FFFFFF;
+
+            &__vector {
+                margin-top: 55px;
             }
 
             &__title {
-                font-family: "Old Standard TT";
-                font-size: 3.5rem;
-                text-align: center;
-                vertical-align: top;
-                letter-spacing: -1.2px;
+                @include section-title;
                 color: #111111;
-                margin-top: 32px;
-                margin-right: 30px;
+                margin-top: 30px;
             }
 
             &__description {
-                font-family: 'Archivo';
-                font-size: 14px;
-                line-height: 24px;
-                color: #777777;
-                text-align: left;
-                vertical-align: top;
-                margin-top: 16px;
-                margin-right: 20px;
+                @include section-description;
+                padding: 0px 13%;
+                color: #111111;
+                margin-top: 21px;
+            }
+        }
+
+        &__section2 {
+            text-align: center;
+            width: 70%;
+            height: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+            min-width: 270px;
+            background-color: #222222;
+            color: #ffffff;
+
+            &__vector {
+                margin-top: 55px;
             }
 
-            &__button {
-                @include boton-gold;
-                border: 2px solid #ffffff;
-                margin-top: 24px;
+            &__title {
+                @include section-title;
+                margin-top: 30px;
             }
 
-            &__image {
-                width: 70%;
-                height: 300px;
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-                min-width: 270px;
-                background-color: #E4E4E4;
-                margin: 60px 14% 0px 14%;
-                margin-left: 0px;
-            }
-
-            &__section {
-                text-align: center;
-                width: 70%;
-                height: 300px;
-                left: 50%;
-                transform: translateX(-50%);
-                position: relative;
-                min-width: 270px;
-                background-color: #FFFFFF;
-
-                &__vector {
-                    margin-top: 55px;
-                }
-
-                &__title {
-                    @include section-title;
-                    color: #111111;
-                    margin-top: 30px;
-                }
-
-                &__description {
-                    @include section-description;
-                    padding: 0px 13%;
-                    color: #111111;
-                    margin-top: 21px;
-                }
-            }
-
-            &__section2 {
-                text-align: center;
-                width: 70%;
-                height: 300px;
-                left: 50%;
-                transform: translateX(-50%);
-                position: relative;
-                min-width: 270px;
-                background-color: #222222;
+            &__description {
+                @include section-description;
+                padding: 0px 13%;
                 color: #ffffff;
-
-                &__vector {
-                    margin-top: 55px;
-                }
-
-                &__title {
-                    @include section-title;
-                    margin-top: 30px;
-                }
-
-                &__description {
-                    @include section-description;
-                    padding: 0px 13%;
-                    color: #ffffff;
-                    margin: 21px 0px 38px;
-                }
+                margin: 21px 0px 38px;
             }
         }
     }
+}

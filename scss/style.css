@@ -224,6 +224,14 @@
     margin: 60px 14% 0px 14%;
     margin-left: 0px;
   }
+  .about__image__team {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
   .about__section {
     text-align: center;
     width: 70%;
@@ -291,6 +299,119 @@
     margin: 21px 0px 38px;
   }
 }
+.rooms__title {
+  font-family: "Archivo";
+  font-style: bold;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin-top: 60px;
+}
+.rooms__description {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-top: 25px;
+}
+.rooms__icons {
+  text-align: center;
+  margin-top: 25px;
+}
+.rooms__icons__image {
+  position: relative;
+  bottom: -50%;
+  transform: translateY(70%);
+  z-index: 9;
+}
+.rooms__slider {
+  width: 100%;
+  height: 244px;
+  background-color: rgb(88, 233, 233);
+}
+.rooms__info {
+  background-color: #ffffff;
+  position: relative;
+  top: -20px;
+  z-index: 9;
+  margin: 0px 5%;
+  padding: 20px 24px;
+}
+.rooms__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: -1.2px;
+  color: #222222;
+}
+.rooms__info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
+  margin-top: 12px;
+}
+.rooms__info__cost {
+  text-align: center;
+  margin: 12px 0px 19px;
+}
+.rooms__info__cost p {
+  display: inline;
+}
+.rooms__info__cost p:nth-child(1) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+}
+.rooms__info__cost p:nth-child(2) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 13px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+  line-height: 63px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
