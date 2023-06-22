@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
 @media only screen and (min-width: 320px) {
   .header {
     position: relative;
@@ -311,7 +311,7 @@
 }
 .rooms__description {
   font-family: "Old Standard TT";
-  font-style: normal;
+  font-weight: 400;
   font-size: 56px;
   line-height: 60px;
   text-align: center;
@@ -465,6 +465,81 @@
     height: 60px;
     cursor: pointer;
     margin: 36px 0px 48px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .facilities {
+    padding: 0px 38px;
+  }
+  .facilities__title {
+    font-family: "Archivo";
+    font-style: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #777777;
+    margin-top: 60px;
+  }
+  .facilities__description {
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #222222;
+    margin-top: 24px;
+  }
+  .facilities__box {
+    margin-top: 32px;
+  }
+  .facilities__box__number {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    text-align: right;
+    vertical-align: top;
+    color: rgba(34, 34, 34, 0.04);
+    position: relative;
+    right: 8.5%;
+  }
+  .facilities__box__image {
+    position: relative;
+    top: -50px;
+    z-index: 9;
+  }
+  .facilities__box__subtitle {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+  }
+  .facilities__box__text {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #c2c2c2;
+    color: #777777;
+    margin-top: 28px;
+  }
+  .facilities__box__pages {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0px 65px;
+  }
+  .facilities__box__pages img {
+    cursor: pointer;
   }
 }
 * {
