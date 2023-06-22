@@ -1,3 +1,5 @@
+
+
 ///-----------MENU MOBILE---------------------
 
 const toggleMenu = document.querySelector('.toggle__menu');
@@ -17,3 +19,11 @@ toggleMenu.addEventListener('click', () => {
   }
 });
 
+//--------SLIDER-------------
+
+const swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
