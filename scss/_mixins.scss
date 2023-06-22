@@ -1,136 +1,167 @@
-
 @mixin banner-text {
     font-family: 'Archivo';
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
-    line-height: 127%;
     text-align: left;
     vertical-align: top;
     letter-spacing: 2.8px;
     margin-bottom: 26px;
     color: #FFFFFF;
-    }
-
-    @mixin description-text {
-        font-family: "Old Standard TT", serif;
-        font-style: normal;
-        font-size: 56px;
-        line-height: 60px;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: -1.2px;
-        color: #FFFFFF;
-    }
-
-    @mixin boton-gold {
-        font-family: 'Archivo';
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: 2.8px;
-        background-color: $gold-color;
-        color: #FFFFFF;
-        width: 217px;
-        height: 60px;
-        cursor: pointer;
-    }
-
-    @mixin boton-learn {
-        font-family: 'Archivo';
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: 2.8px;
-        background-color: #333333;
-        color:  #FFFFFF;
-        width: 217px;
-        height: 60px;
-        cursor: pointer;
-    }
-
-    @mixin text-label {
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: left;
-        vertical-align: top;
-        color: #FFFFFF;
 }
 
-    @mixin section-title{
-        font-family: "Old Standard TT", serif;
-        font-style: normal;
-        font-size: 30px;
-        line-height: 30px;
-        vertical-align: top;
-        letter-spacing: -0.9px;
-    }
+@mixin description-text {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
 
-    @mixin section-description {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-size: 14px;
-        line-height: 22px;
-        vertical-align: top;
-    }
+@mixin boton-gold {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: $gold-color;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+}
 
-    //ROOMS
+@mixin boton-learn {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+}
 
-    @mixin rooms-title {
-        font-family: 'Archivo';
-        font-style: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: 2.8px;
-        color: #777777;
-    }
+@mixin text-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: top;
+    color: #FFFFFF;
+}
 
-    @mixin rooms-description {
-        font-family: "Old Standard TT";
-        font-style: normal;
-        font-size: 56px;
-        line-height: 60px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: -1.2px;
-        color: #222222;
-    }
+@mixin section-title {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: -0.9px;
+}
 
-    @mixin info-title {
-        font-family: "Old Standard TT", serif;
-        font-size: 28px;
-        line-height: 36px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: -1.2px;
-        color: #222222;
-    }
+@mixin section-description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+}
 
-    @mixin info-description {
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: center;
-        vertical-align: top;
-        margin-bottom: 24px;
-        color: #777777;
-    }
+//ROOMS
 
-    @mixin info-cost($font-size) {
-        font-family: "Archivo", sans-serif;
-        font-style: bold;
-        font-size: $font-size;
-        line-height: 43px;
-        text-align: center;
-        vertical-align: top;
-        color: #BEAD8E;
-      }
-      
+@mixin rooms-title {
+    font-family: 'Archivo';
+    font-style: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #777777;
+}
+
+@mixin rooms-description {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #222222;
+}
+
+@mixin info-title {
+    font-family: "Old Standard TT", serif;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #222222;
+}
+
+@mixin info-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 24px;
+    color: #777777;
+}
+
+@mixin info-cost($font-size) {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: $font-size;
+    line-height: 43px;
+    text-align: center;
+    vertical-align: top;
+    color: #BEAD8E;
+}
+
+// INTRO VIDEO
+
+@mixin intro-title {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #BDAC8D;
+}
+
+@mixin intro-description {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+@mixin intro-text {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #c2c2c2;
+}

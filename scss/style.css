@@ -58,7 +58,6 @@
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
-    line-height: 127%;
     text-align: left;
     vertical-align: top;
     letter-spacing: 2.8px;
@@ -412,6 +411,62 @@
      object-fit: cover;
 }
 
+@media only screen and (min-width: 320px) {
+  .intro {
+    background-color: #222222;
+    padding: 65px 20px 0px;
+  }
+  .intro__title {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #BDAC8D;
+  }
+  .intro__description {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-top: 32px;
+  }
+  .intro__text {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #c2c2c2;
+    margin-top: 16px;
+  }
+  .intro__video {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .intro__button {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    margin: 36px 0px 48px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
