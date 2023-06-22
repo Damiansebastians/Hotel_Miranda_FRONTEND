@@ -34,6 +34,11 @@
     width: 217px;
     height: 60px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @mixin boton-learn {
@@ -49,6 +54,11 @@
     width: 217px;
     height: 60px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @mixin text-label {
@@ -129,7 +139,7 @@
     line-height: 43px;
     text-align: center;
     vertical-align: top;
-    color: #BEAD8E;
+    color: $gold-color;
 }
 
 // INTRO VIDEO
@@ -142,7 +152,7 @@
     text-align: left;
     vertical-align: top;
     letter-spacing: 2.8px;
-    color: #BDAC8D;
+    color:$gold-color;
 }
 
 @mixin intro-description {
@@ -179,3 +189,35 @@
     color: rgba(34, 34, 34, 0.04);
 }
 
+// MENU
+
+@mixin menu-subtitle {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+}
+
+@mixin menu-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #222222;
+}
+
+//ACHIEVEMENTS
+
+@mixin achievements-text($font-size) {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: $font-size;
+    text-align: center;
+    color: #FFFFFF;
+    }
