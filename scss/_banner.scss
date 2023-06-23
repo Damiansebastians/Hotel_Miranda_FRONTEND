@@ -6,16 +6,15 @@
 @media only screen and (min-width: 320px) {
 
     .banner {
-        display: flex;
         flex-direction: column;
         background-color: $banner-bg-color;
         color: #FFFFFF;
-        padding-left: 20px;
+        padding: 75px 0px 76px 20px ;
+        margin-top: 73px ;
 
             
             &__title {
                 @include banner-text;
-                margin-top: 75px;
                 width: 75%;
             }
 
@@ -34,7 +33,7 @@
                 
             .banner__button--secondary {
                 @include boton-learn;
-                margin: 24px 0px 75px;
+                margin-top: 24px;
                 display: block;
             }
         }
