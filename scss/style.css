@@ -734,6 +734,124 @@
     margin-bottom: 48px;
   }
 }
+@media only screen and (min-width: 320px) {
+  .footer {
+    background-image: url(".././img/background_footer_mobile.png");
+    background-size: cover;
+    margin-top: 60px;
+    padding: 0px 20px;
+  }
+  .footer__logo {
+    padding-top: 32px;
+    margin-left: -20px;
+  }
+  .footer__description {
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #777777;
+  }
+  .footer__socials {
+    margin-top: 32px;
+  }
+  .footer__title {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+    margin-top: 32px;
+  }
+  .footer__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin-top: 24px;
+  }
+  .footer__list__ul:first-child {
+    grid-column: 1;
+    list-style-type: none;
+  }
+  .footer__list__ul:last-child {
+    grid-column: 2;
+    list-style-type: none;
+  }
+  .footer__list .footer__list__ul--item {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    color: #777777;
+  }
+  .footer__contact {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+    margin-top: 32px;
+  }
+  .footer__phone {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+  .footer__phone .group {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__phone .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer__phone__image {
+    margin-right: 20px;
+  }
+  .footer__phone__number p:nth-child(1) {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .footer__phone__number p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #222222;
+    color: #777777;
+  }
+  .footer__phone #item3 {
+    margin-bottom: 30px;
+  }
+  .finish {
+    color: #222;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+  .finish__copyright {
+    margin-bottom: 24px;
+  }
+  .finish__terms {
+    margin-bottom: 16px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

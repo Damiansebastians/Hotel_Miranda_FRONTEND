@@ -16,7 +16,6 @@
             @include rooms-title;
             text-align: left;
             margin-top: 0.5px;
-
         }
 
         &__description {
@@ -105,7 +104,6 @@
             .swiper-slide {
                 width: 80%;
                 height: 80%;
-
             }
 
             .swiper-pagination {
@@ -131,7 +129,6 @@
         .menu__achievements {
             background-color: $availability-bg-color;
             padding-top: 48px;
-
 
             .menu__achievements__box {
                 display: flex;
@@ -166,12 +163,10 @@
                         margin-bottom: 48px;
                     }
                 }
+            }
         }
-
     }
 }
-
-    }
 
 
 
