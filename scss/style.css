@@ -756,7 +756,6 @@
     margin-top: 32px;
   }
   .footer__title {
-    margin-top: 32px;
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-size: 24px;
@@ -765,6 +764,7 @@
     vertical-align: top;
     letter-spacing: -0.72px;
     color: #222222;
+    margin-top: 32px;
   }
   .footer__list {
     display: grid;
@@ -786,6 +786,70 @@
     font-size: 16px;
     line-height: 48px;
     color: #777777;
+  }
+  .footer__contact {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+    margin-top: 32px;
+  }
+  .footer__phone {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+  .footer__phone .group {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__phone .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer__phone__image {
+    margin-right: 20px;
+  }
+  .footer__phone__number p:nth-child(1) {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .footer__phone__number p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #222222;
+    color: #777777;
+  }
+  .footer__phone #item3 {
+    margin-bottom: 30px;
+  }
+  .finish {
+    color: #222;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+  .finish__copyright {
+    margin-bottom: 24px;
+  }
+  .finish__terms {
+    margin-bottom: 16px;
   }
 }
 * {
