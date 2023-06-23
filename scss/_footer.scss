@@ -7,42 +7,48 @@
 
     .footer {
         background-image: url(".././img/background_footer_mobile.png");
+        background-size: cover;
+        margin-top: 60px;
+        padding: 0px 20px;
 
         &__logo {
-            // Estilos para el contenedor del logo
-
-            &--image {
-                // Estilos para la imagen del logo
-            }
+            padding-top: 32px;
+            margin-left: -20px;
         }
 
         &__description {
-            // Estilos para la descripción
+            @include footer-description;
         }
 
         &__socials {
-            // Estilos para el contenedor de los íconos de redes sociales
-
-            &--image {
-                // Estilos para la imagen de los íconos de redes sociales
-            }
+            margin-top: 32px;
         }
 
         &__title {
-            // Estilos para el título de los servicios
+            margin-top: 32px;
+            @include menu-subtitle;
         }
 
         &__list {
-            // Estilos para el contenedor de la lista de servicios
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            margin-top: 24px;
 
-            &__ul {
-                // Estilos para la lista de servicios
+            &__ul:first-child {
+                grid-column: 1;
+                list-style-type: none;
+            }
 
-                &--item {
-                    // Estilos para los elementos de la lista de servicios
+            &__ul:last-child {
+                grid-column: 2;
+                list-style-type: none;
+            }
+
+                .footer__list__ul--item {
+                    @include footer-list;
                 }
             }
-        }
 
         &__contact {
             // Estilos para el título de contacto

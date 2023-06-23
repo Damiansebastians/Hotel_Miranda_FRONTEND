@@ -221,3 +221,21 @@
     text-align: center;
     color: #FFFFFF;
     }
+
+    //FOOTER
+
+    @mixin footer-description {
+        font-family: 'Archivo';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #777777;
+    }
+
+    @mixin footer-list {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 48px;
+        color: #777777;
+    }
