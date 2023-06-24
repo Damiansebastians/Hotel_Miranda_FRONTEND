@@ -1,0 +1,71 @@
+@import "../variables";
+@import '../mixins';
+
+// FACILITIES ABOUT
+
+@media only screen and (min-width: 320px) {
+
+    .facilitiesAbout {
+        padding: 48px 20px 42px;
+        background-color: $availability-bg-color;
+
+        &__title {
+            @include rooms-title;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        &__description {
+            @include rooms-description;
+            margin-top: 16px;
+            color: #FFFFFF;
+        }
+
+        &__box {
+            margin-top: 32px;
+            background-color: #292929;
+            padding-bottom: 51px;
+
+            &__number {
+                @include box-number;
+                position: relative;
+                right: 8.5%;
+                color: $availability-bg-color;
+            }
+
+            &__image {
+                padding-left: 18px;
+                position: relative;
+                top: -50px;
+                z-index: 9;
+            }
+
+            &__subtitle {
+                @include section-title;
+                font-weight: 400;
+                color: #FFFFFF;
+                padding-left: 16px;
+            }
+
+            &__text {
+                @include intro-text;
+                color: #FFFFFF;
+                margin-top: 28px;
+                padding: 0px 67px 0px 18px;
+            }
+        }
+
+        &__pages {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+
+            img {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+
+}
