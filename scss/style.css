@@ -79,8 +79,8 @@
   }
   .banner__description {
     font-family: "Old Standard TT", serif;
-    font-style: normal;
     font-size: 56px;
+    font-weight: 400;
     line-height: 60px;
     text-align: left;
     vertical-align: top;
@@ -861,6 +861,68 @@
   }
   .finish__terms {
     margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .ultimate {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    color: #FFFFFF;
+    margin-top: 73px;
+    padding: 75px 20px 0px;
+  }
+  .ultimate__title {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  .ultimate__description {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-bottom: 47px;
+  }
+  .ultimate__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .ultimate__box--link {
+    background-color: #FFFFFF;
+    overflow: visible;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 13;
+  }
+  .ultimate__box--link a:nth-child(1) {
+    font-family: "Archivo";
+    color: #111111;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    text-decoration: none;
+  }
+  .ultimate__box--link a:nth-child(2) {
+    font-family: "Archivo";
+    color: #111111;
+    font-size: 16px;
+    font-weight: bold;
+    color: #BEAD8E;
+    text-decoration: none;
   }
 }
 * {

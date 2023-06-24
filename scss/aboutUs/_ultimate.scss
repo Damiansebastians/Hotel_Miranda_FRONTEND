@@ -1,0 +1,56 @@
+@import "../variables";
+@import '../mixins';
+
+// BANNER
+
+@media only screen and (min-width: 320px) {
+
+    .ultimate {
+        display: flex;
+        flex-direction: column;
+        background-color: $banner-bg-color;
+        color: #FFFFFF;
+        margin-top: 73px;
+        padding: 75px 20px 0px;
+
+        &__title {
+            @include banner-text;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            @include description-text;
+            margin-bottom: 47px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &--link {
+                background-color: #FFFFFF;
+                overflow: visible;
+                padding: 16px 24px;
+                display: flex;
+                flex-direction: row;
+                gap: 13;
+
+                a:nth-child(1) {
+                    @include menu-items;
+                    color: $availability-bg-color;
+                    text-decoration: none;
+                }
+
+                a:nth-child(2) {
+                    @include menu-items;
+                    color: $gold-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
+
+}
