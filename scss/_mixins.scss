@@ -251,7 +251,6 @@
 
 @mixin footer-phone {
     font-family: 'Old Standard TT', serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -264,4 +263,17 @@
     font-family: Roboto;
     font-weight: 700;
     letter-spacing: -0.48px;
+}
+
+//ABOUT US
+
+// INFO
+
+@mixin info_description {
+    color: $availability-bg-color;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Old Standard TT';
+    letter-spacing: -1.16px;
 }
