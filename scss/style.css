@@ -327,7 +327,6 @@
 }
 .rooms__title {
   font-family: "Archivo";
-  font-style: bold;
   font-size: 14px;
   line-height: 15px;
   text-align: center;
@@ -503,7 +502,6 @@
   }
   .facilities__title {
     font-family: "Archivo";
-    font-style: bold;
     font-size: 14px;
     line-height: 15px;
     text-align: center;
@@ -581,7 +579,6 @@
   }
   .menu__title {
     font-family: "Archivo";
-    font-style: bold;
     font-size: 14px;
     line-height: 15px;
     text-align: center;
@@ -717,27 +714,27 @@
     margin-bottom: 16px;
   }
   .menu .menu__achievements .menu__achievements__box--text p:nth-child(1) {
+    font-size: 60px;
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 60px;
     text-align: center;
     color: #FFFFFF;
     color: #ffffff;
     display: inline;
   }
   .menu .menu__achievements .menu__achievements__box--text p:nth-child(2) {
+    font-size: 14px;
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 14px;
     text-align: center;
     color: #FFFFFF;
     color: #ffffff;
     display: inline;
   }
   .menu .menu__achievements .menu__achievements__box--text p:nth-child(3) {
+    font-size: 16px;
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 16px;
     text-align: center;
     color: #FFFFFF;
     color: #999999;
@@ -757,8 +754,8 @@
   }
   .footer__description {
     font-family: "Archivo";
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 26px;
     color: #777777;
   }
@@ -792,8 +789,8 @@
   }
   .footer__list .footer__list__ul--item {
     font-family: "Roboto";
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 48px;
     color: #777777;
   }
@@ -827,8 +824,8 @@
   }
   .footer__phone__number p:nth-child(1) {
     font-family: "Old Standard TT", serif;
-    font-weight: 400;
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px;
     color: #222222;
   }
@@ -846,9 +843,9 @@
     margin-bottom: 30px;
   }
   .finish {
-    color: #222;
-    font-size: 16px;
     font-family: "Roboto";
+    font-size: 16px;
+    color: #222;
     font-weight: 700;
     letter-spacing: -0.48px;
     margin-top: 16px;
@@ -976,6 +973,68 @@
   }
   .info__content #item-gold p {
     color: #ffffff;
+  }
+  .restaurant {
+    background: #ffffff;
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+    margin-top: 31px;
+    padding: 20px;
+  }
+  .restaurant__picture {
+    margin-bottom: 32px;
+  }
+  .restaurant__picture .restaurant__picture-image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurant__title {
+    font-family: "Archivo";
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #777777;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+  .restaurant__description {
+    font-family: "Old Standard TT";
+    font-size: 40px;
+    font-weight: 400;
+    color: #222;
+    letter-spacing: -1.05px;
+    margin-bottom: 26px;
+  }
+  .restaurant__text {
+    font-family: "Archivo";
+    font-size: 14px;
+    color: #777777;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .restaurant__button {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: #BEAD8E;
+    text-transform: uppercase;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+  }
+  .restaurant__button:hover {
+    transform: scale(1.1);
   }
 }
 * {
