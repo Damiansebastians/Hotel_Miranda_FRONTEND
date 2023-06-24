@@ -848,7 +848,7 @@
   .finish {
     color: #222;
     font-size: 16px;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 700;
     letter-spacing: -0.48px;
     margin-top: 16px;
@@ -941,6 +941,41 @@
   }
   .info__content {
     margin-top: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__content span {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .info__content-item {
+    max-width: 155px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .info__content-item .info__content-img {
+    margin: 44px 50px 18px;
+  }
+  .info__content-item .info__content-text {
+    color: #222;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Archivo";
+    font-weight: 800;
+    line-height: 14px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  .info__content #item-gold {
+    background-color: #BEAD8E;
+  }
+  .info__content #item-gold p {
+    color: #ffffff;
   }
 }
 * {

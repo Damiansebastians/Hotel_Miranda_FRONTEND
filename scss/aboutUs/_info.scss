@@ -20,22 +20,41 @@
 
         &__content {
             margin-top: 51px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & span{
+                display:flex;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
 
             &-item {
-                // Estilos de cada elemento de contenido
+                max-width: 155px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
 
                 & .info__content-img {
-                    // Estilos de la imagen
+                    margin: 44px 50px 18px;
                 }
 
                 & .info__content-text {
-                    // Estilos del texto
+                    @include info_text;
+                    margin-bottom: 38px;
+                    text-align: center;
+                }
+            }
+
+            #item-gold {
+                background-color: $gold-color;
+
+                    p{
+                        color: #ffffff;
+                    }
                 }
             }
         }
-    }
-
-
-
 
 }
