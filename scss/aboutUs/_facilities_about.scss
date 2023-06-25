@@ -90,7 +90,7 @@
 
 
             .counter__items {
-                width: 335px;
+                max-width: 400px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -119,8 +119,9 @@
                 }
 
                 &--vector {
-                    
-                    & img{
+                    margin-left: auto;
+
+                    & img {
                         position: relative;
                         margin-right: 20px;
                     }
@@ -132,6 +133,8 @@
         .counter__slider {
 
             .swiper {
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 height: 100%;
             }
@@ -139,7 +142,6 @@
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
-                background: #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -150,6 +152,21 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                margin-bottom: 30px;
+            }
+
+            .swiper-pagination {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .swiper-pagination-bullet {
+                background-color: #EDEDED;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: $gold-color;
             }
         }
     }
