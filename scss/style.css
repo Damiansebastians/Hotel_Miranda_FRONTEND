@@ -683,6 +683,14 @@
     width: 80%;
     height: 80%;
   }
+  .menu__slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 26px;
+  }
   .menu__slider .swiper-pagination {
     display: flex;
     justify-content: center;
@@ -1035,6 +1043,191 @@
   }
   .restaurant__button:hover {
     transform: scale(1.1);
+  }
+}
+@media only screen and (min-width: 320px) {
+  .facilitiesAbout {
+    padding: 48px 20px 42px;
+    background-color: #222222;
+  }
+  .facilitiesAbout__title {
+    font-family: "Archivo";
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #777777;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .facilitiesAbout__description {
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #222222;
+    margin-top: 16px;
+    color: #FFFFFF;
+  }
+  .facilitiesAbout__box {
+    margin-top: 32px;
+    background-color: #292929;
+    padding-bottom: 51px;
+  }
+  .facilitiesAbout__box__number {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    text-align: right;
+    vertical-align: top;
+    color: rgba(34, 34, 34, 0.04);
+    position: relative;
+    right: 8.5%;
+    color: #222222;
+  }
+  .facilitiesAbout__box__image {
+    padding-left: 18px;
+    position: relative;
+    top: -50px;
+    z-index: 9;
+  }
+  .facilitiesAbout__box__subtitle {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-left: 16px;
+  }
+  .facilitiesAbout__box__text {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #c2c2c2;
+    color: #FFFFFF;
+    margin-top: 28px;
+    padding: 0px 67px 0px 18px;
+  }
+  .facilitiesAbout__pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .facilitiesAbout__pages img {
+    cursor: pointer;
+  }
+  .counter {
+    margin: 60px 20px 0px;
+  }
+  .counter .counter__title {
+    font-family: "Archivo";
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .counter .counter__description {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    color: #222222;
+    margin-bottom: 36px;
+  }
+  .counter span {
+    display: flex;
+    flex-direction: column;
+  }
+  .counter span .counter__items {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .counter span .counter__items--image {
+    margin: 0px 20px 0px;
+  }
+  .counter span .counter__items--text p:nth-child(1) {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    color: #222222;
+    font-weight: normal;
+  }
+  .counter span .counter__items--text p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: top;
+    color: #777777;
+  }
+  .counter span .counter__items--vector {
+    margin-left: auto;
+  }
+  .counter span .counter__items--vector img {
+    position: relative;
+    margin-right: 20px;
+  }
+  .counter .counter__slider .swiper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .counter .counter__slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter .counter__slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .counter .counter__slider .swiper-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .counter .counter__slider .swiper-pagination-bullet {
+    background-color: #EDEDED;
+  }
+  .counter .counter__slider .swiper-pagination-bullet-active {
+    background-color: #BEAD8E;
   }
 }
 * {
