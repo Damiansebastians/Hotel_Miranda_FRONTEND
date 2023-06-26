@@ -379,12 +379,13 @@
   color: #222222;
 }
 .rooms__info__description {
-  color: #222222;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
-  font-size: 32px;
-  font-family: "Old Standard TT";
-  letter-spacing: -1.16px;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
   margin-top: 12px;
 }
 .rooms__info__cost {
@@ -1228,6 +1229,81 @@
   }
   .counter .counter__slider .swiper-pagination-bullet-active {
     background-color: #BEAD8E;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .roomsPage {
+    padding: 48px 20px 0px;
+  }
+  .roomsPage__image {
+    width: 100%;
+  }
+  .roomsPage__image img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .roomsPage__icons {
+    text-align: center;
+  }
+  .roomsPage__icons__image {
+    position: relative;
+    bottom: -50%;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+  .roomsPage__title {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+    text-align: center;
+    margin-top: -25px;
+  }
+  .roomsPage__description {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 24px;
+    color: #777777;
+    text-align: center;
+    padding: 0px 22px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .roomsPage__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .roomsPage__info p:nth-child(1) {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 43px;
+    text-align: center;
+    vertical-align: top;
+    color: #BEAD8E;
+    font-weight: bold;
+  }
+  .roomsPage__info p:nth-child(2) {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 43px;
+    text-align: center;
+    vertical-align: top;
+    color: #BEAD8E;
+    color: #BDBDBD;
+    font-weight: bold;
+    margin-bottom: 52px;
   }
 }
 * {
