@@ -1438,6 +1438,16 @@
     color: #777;
     width: 200px;
   }
+  .image__container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 90%;
+    max-height: 750px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 270px;
+  }
 }
 * {
   box-sizing: border-box;
