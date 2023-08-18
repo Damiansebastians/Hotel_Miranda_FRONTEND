@@ -1448,6 +1448,52 @@
     transform: translateX(-50%);
     min-width: 270px;
   }
+  .form {
+    margin: 60px 0;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form__input {
+    width: 90%;
+    height: 65px;
+    display: block;
+    padding: 10px;
+    background-color: #F8F8F8;
+    border: none;
+  }
+  .form__button {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 60%;
+    max-width: 500px;
+    height: 65px;
+    text-transform: uppercase;
+    border-color: #F8F8F8;
+    margin-top: 20px;
+  }
+  .form__button:hover {
+    transform: scale(1.1);
+  }
+  .form__input {
+    background-image: url("../../assets/contact/hotel_relax.jpg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
 }
 * {
   box-sizing: border-box;
