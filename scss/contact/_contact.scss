@@ -103,22 +103,39 @@
 }
 
 // Desktop
-// .contact-cards-container,
 
 @media only screen and (min-width: 1000px) {
-  
-  .image{
-    margin: auto 10%;
+  .contact-cards {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: -25px;
+
+    &__items__img {
+      position: relative;
+      left: 10%;
+    }
+  }
+
+  .image {
+    margin: -100px 10% auto;
   }
 
   .form {
     max-width: 750px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr); 
-    margin: 120px auto ;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px auto;
   }
-  
+
   .form__input {
     width: 100%;
   }
