@@ -869,9 +869,26 @@
 }
 @media only screen and (min-width: 1000px) {
   .footer {
+    padding: 20px;
     display: flex;
-    width: 90%;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 100px;
+  }
+  .container {
+    flex: 1;
+    max-width: 330px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  .footer__list__ul--item {
+    margin-bottom: 5px;
+  }
+  .finish {
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media only screen and (min-width: 320px) {
