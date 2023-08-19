@@ -65,7 +65,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     &__input {
       color: #777;
       font-family: "Roboto";
@@ -96,16 +96,40 @@
     height: 165px;
   }
 
-  #input__message::placeholder { 
+  #input__message::placeholder {
     position: relative;
     bottom: 30%;
   }
 }
 
-
 // Desktop
+// .contact-cards-container,
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
+  
+  .image{
+    margin: auto 10%;
+  }
 
+  .form {
+    max-width: 750px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 120px auto ;
+  }
+  
+  .form__input {
+    width: 100%;
+  }
+
+  .form__button {
+    grid-column: 1 / -1;
+    margin: 0px auto;
+    width: 40%;
+  }
+
+  #input__message {
+    width: 205%;
+  }
 }
-
