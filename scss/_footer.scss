@@ -108,3 +108,15 @@
     }
 
 }
+
+// Desktop
+
+@media only screen and (min-width: 1000px){
+
+    .footer {
+        display: flex;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+}

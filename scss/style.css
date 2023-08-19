@@ -867,6 +867,13 @@
     margin-bottom: 16px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .footer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 320px) {
   .ultimate {
     display: flex;
@@ -1304,6 +1311,390 @@
     color: #BDBDBD;
     font-weight: bold;
     margin-bottom: 52px;
+  }
+}
+.rooms__title {
+  font-family: "Archivo";
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin-top: 60px;
+}
+.rooms__description {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-top: 25px;
+}
+.rooms__icons {
+  text-align: center;
+  margin-top: 25px;
+}
+.rooms__icons__image {
+  position: relative;
+  bottom: -50%;
+  transform: translateY(70%);
+  z-index: 9;
+}
+.rooms__slider {
+  width: 100%;
+  height: 244px;
+  background-color: rgb(88, 233, 233);
+}
+.rooms__info {
+  background-color: #ffffff;
+  position: relative;
+  top: -20px;
+  z-index: 9;
+  margin: 0px 5%;
+  padding: 20px 24px;
+}
+.rooms__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: -1.2px;
+  color: #222222;
+}
+.rooms__info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
+  margin-top: 12px;
+}
+.rooms__info__cost {
+  text-align: center;
+  margin: 12px 0px 19px;
+}
+.rooms__info__cost p {
+  display: inline;
+}
+.rooms__info__cost p:nth-child(1) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+}
+.rooms__info__cost p:nth-child(2) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 13px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+  line-height: 63px;
+}
+
+@media only screen and (min-width: 320px) {
+  .contact-cards-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 50px;
+  }
+  .contact-cards-container__items__img {
+    position: relative;
+    left: 50%;
+    z-index: 1;
+  }
+  .contact-cards-container__items__icon {
+    position: relative;
+    bottom: 145px;
+    z-index: 2;
+  }
+  .contact-cards-container__items__text {
+    position: relative;
+    margin: 0 auto;
+    bottom: 140px;
+    z-index: 2;
+  }
+  .contact-cards-container__items__text__title {
+    font-family: "Old Standard TT", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #222222;
+    margin-bottom: 15px;
+  }
+  .contact-cards-container__items__text__info {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #222222;
+    color: #777;
+    width: 200px;
+  }
+  .image__container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 90%;
+    max-height: 750px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 270px;
+  }
+  .form {
+    margin: 60px 0;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form__input {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    height: 65px;
+    display: block;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: none;
+  }
+  .form__button {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 60%;
+    max-width: 500px;
+    height: 65px;
+    text-transform: uppercase;
+    border-color: #f8f8f8;
+    margin-top: 20px;
+  }
+  .form__button:hover {
+    transform: scale(1.1);
+  }
+  #input__message {
+    height: 165px;
+  }
+  #input__message::-moz-placeholder {
+    position: relative;
+    bottom: 30%;
+  }
+  #input__message::placeholder {
+    position: relative;
+    bottom: 30%;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .offers {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+  .offers__prices {
+    position: relative;
+  }
+  .offers__prices img {
+    width: 100%;
+  }
+  .offers__prices-text {
+    position: absolute;
+    display: inline;
+    bottom: 10%;
+    left: 90%;
+    transform: translate(-90%, -10%);
+    display: inline;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6588235294);
+  }
+  .offers__prices h5:first-child {
+    text-decoration: line-through;
+    font-size: 23px;
+  }
+  .offers__prices h5:last-child {
+    color: #de5777;
+  }
+  .offers h6 {
+    margin-top: 16px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+  }
+  .offers__title {
+    width: 80%;
+    margin-left: 0;
+  }
+  .offers p {
+    margin-top: 16px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .book-now {
+    margin-top: 36px;
+    margin-bottom: 48px;
+    margin-left: 5%;
+    width: 216px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #bdac8d;
+  }
+  .amenities-offers {
+    background: #ffffff;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  }
+  .card-background {
+    background-color: black;
+    margin-top: 60px;
+  }
+  .card-background__slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card-background .swiper-button-prev,
+  .card-background .swiper-button-next {
+    --swiper-navigation-size: 25px;
+    background-color: white;
+    height: 60px;
+    width: 40px;
+    margin-top: -30px;
+  }
+  .card-background .swiper-button-prev {
+    border-radius: 0 65px 65px 0;
+    left: -10px;
+  }
+  .card-background .swiper-button-next {
+    border-radius: 65px 0 0 65px;
+    right: -10px;
+  }
+  .services {
+    width: 256px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 20px;
+    z-index: 50;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  }
+  .card-info {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    background: #ffffff;
+    z-index: 5;
+    bottom: 50px;
+  }
+  .card-info h4 {
+    margin-top: 28px;
+    padding-top: 20px;
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1.2px;
+    color: #222222;
+  }
+  .card-info p {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 19px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .card-info__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-info__price h5 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 12px;
+    color: #bead8e;
+  }
+  .card-info__price h5 sub {
+    font-size: 12px;
+  }
+  .card-info__price h6 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #bdbdbd;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .offers__prices-text {
+    width: 11%;
+    bottom: -7%;
+    background: rgba(0, 0, 0, 0.91);
+  }
+  .amenities__list {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 * {

@@ -1,0 +1,111 @@
+@import "../variables";
+@import "../mixins";
+
+//-- CONTACT CARDS --
+
+@media only screen and (min-width: 320px) {
+  .contact-cards-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 50px;
+
+    &__items {
+      &__img {
+        position: relative;
+        left: 50%;
+        z-index: 1;
+      }
+
+      &__icon {
+        position: relative;
+        bottom: 145px;
+        z-index: 2;
+      }
+
+      &__text {
+        position: relative;
+        margin: 0 auto;
+        bottom: 140px;
+        z-index: 2;
+
+        &__title {
+          @include footer-phone;
+          margin-bottom: 15px;
+        }
+
+        &__info {
+          @include menu-text;
+          color: #777;
+          width: 200px;
+        }
+      }
+    }
+  }
+  .image {
+    &__container {
+      & img {
+        object-fit: cover;
+        width: 90%;
+        max-height: 750px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 270px;
+      }
+    }
+  }
+
+  //FORM
+
+  .form {
+    margin: 60px 0;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__input {
+      color: #777;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 90%;
+      height: 65px;
+      display: block;
+      padding: 10px;
+      background-color: #f8f8f8;
+      border: none;
+    }
+
+    &__button {
+      @include boton-gold;
+      width: 60%;
+      max-width: 500px;
+      height: 65px;
+      text-transform: uppercase;
+      border-color: #f8f8f8;
+      margin-top: 20px;
+    }
+  }
+
+  #input__message {
+    height: 165px;
+  }
+
+  #input__message::placeholder { 
+    position: relative;
+    bottom: 30%;
+  }
+}
+
+
+// Desktop
+
+@media only screen and (min-width: 1000px){
+
+}
+
