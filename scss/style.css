@@ -867,6 +867,13 @@
     margin-bottom: 16px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .footer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 320px) {
   .ultimate {
     display: flex;
@@ -1504,6 +1511,190 @@
   #input__message::placeholder {
     position: relative;
     bottom: 30%;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .offers {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+  .offers__prices {
+    position: relative;
+  }
+  .offers__prices img {
+    width: 100%;
+  }
+  .offers__prices-text {
+    position: absolute;
+    display: inline;
+    bottom: 10%;
+    left: 90%;
+    transform: translate(-90%, -10%);
+    display: inline;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6588235294);
+  }
+  .offers__prices h5:first-child {
+    text-decoration: line-through;
+    font-size: 23px;
+  }
+  .offers__prices h5:last-child {
+    color: #de5777;
+  }
+  .offers h6 {
+    margin-top: 16px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+  }
+  .offers__title {
+    width: 80%;
+    margin-left: 0;
+  }
+  .offers p {
+    margin-top: 16px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .book-now {
+    margin-top: 36px;
+    margin-bottom: 48px;
+    margin-left: 5%;
+    width: 216px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #bdac8d;
+  }
+  .amenities-offers {
+    background: #ffffff;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  }
+  .card-background {
+    background-color: black;
+    margin-top: 60px;
+  }
+  .card-background__slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card-background .swiper-button-prev,
+  .card-background .swiper-button-next {
+    --swiper-navigation-size: 25px;
+    background-color: white;
+    height: 60px;
+    width: 40px;
+    margin-top: -30px;
+  }
+  .card-background .swiper-button-prev {
+    border-radius: 0 65px 65px 0;
+    left: -10px;
+  }
+  .card-background .swiper-button-next {
+    border-radius: 65px 0 0 65px;
+    right: -10px;
+  }
+  .services {
+    width: 256px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 20px;
+    z-index: 50;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  }
+  .card-info {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    background: #ffffff;
+    z-index: 5;
+    bottom: 50px;
+  }
+  .card-info h4 {
+    margin-top: 28px;
+    padding-top: 20px;
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1.2px;
+    color: #222222;
+  }
+  .card-info p {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 19px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .card-info__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-info__price h5 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 12px;
+    color: #bead8e;
+  }
+  .card-info__price h5 sub {
+    font-size: 12px;
+  }
+  .card-info__price h6 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #bdbdbd;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .offers__prices-text {
+    width: 11%;
+    bottom: -7%;
+    background: rgba(0, 0, 0, 0.91);
+  }
+  .amenities__list {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 * {
