@@ -65,15 +65,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
     &__input {
+      color: #777;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
       width: 90%;
       height: 65px;
       display: block;
       padding: 10px;
-      background-color: #F8F8F8;
+      background-color: #f8f8f8;
       border: none;
-    };
+    }
 
     &__button {
       @include boton-gold;
@@ -81,17 +87,19 @@
       max-width: 500px;
       height: 65px;
       text-transform: uppercase;
-      border-color: #F8F8F8;
+      border-color: #f8f8f8;
       margin-top: 20px;
     }
   }
 
-    .form__input{
-      background-image: url("../../assets/contact/hotel_relax.jpg");
-      background-size: 15px 15px;
-      background-repeat: no-repeat;
-      background-position: left center;
-    }
+  #input__message {
+    height: 165px;
+  }
+
+  #input__message::placeholder { 
+    position: relative;
+    bottom: 30%;
+  }
 }
 
 // &__text {
