@@ -598,6 +598,9 @@
   }
 }
 @media only screen and (min-width: 320px) {
+  .desktop {
+    display: none;
+  }
   .header__top {
     display: none;
   }
@@ -778,8 +781,15 @@
     color: #999999;
     margin-bottom: 48px;
   }
+  .header__user-button,
+  .header__search-button {
+    cursor: pointer;
+  }
 }
 @media only screen and (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
   .header__top {
     display: block;
     position: relative;
@@ -811,16 +821,25 @@
     background-color: #ffffff;
     z-index: 99;
   }
-  .header__toggle {
-    display: block;
-  }
   .toggle__menu {
     display: none;
   }
-  .menu__mobile {
-    display: block;
+  .menu__desktop {
+    gap: 10px;
+    list-style-type: none;
+    display: flex;
     justify-content: center;
     flex-direction: row;
+  }
+  .menu__desktop a {
+    font-family: "Archivo";
+    color: #111111;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .menu__desktop a:hover {
+    color: #BEAD8E;
   }
 }
 @media only screen and (min-width: 320px) {

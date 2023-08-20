@@ -4,6 +4,10 @@
 // MENU
 
 @media only screen and (min-width: 320px) {
+  .desktop {
+    display: none;
+  }
+
   .header__top {
     display: none;
   }
@@ -177,9 +181,18 @@
       }
     }
   }
+
+  .header__user-button,
+  .header__search-button {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
+
   .header__top {
     display: block;
     position: relative;
@@ -187,12 +200,12 @@
     height: 75px;
     background-color: #222222;
 
-    & p{
-        @include text-label;
-        font-weight: normal;
-        color: #ffffff;
-        margin-left: 10%;
-        padding-top: 10px; 
+    & p {
+      @include text-label;
+      font-weight: normal;
+      color: #ffffff;
+      margin-left: 10%;
+      padding-top: 10px;
     }
   }
 
@@ -208,17 +221,23 @@
     z-index: 99;
   }
 
-  .header__toggle {
-    display: block;
-  }
-
   .toggle__menu {
     display: none;
   }
 
-  .menu__mobile {
-    display: block;
+  .menu__desktop {
+    gap: 10px;
+    list-style-type: none;
+    display: flex;
     justify-content: center;
     flex-direction: row;
+
+    & a {
+      @include menu-items;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $gold-color;
+    }
   }
 }
