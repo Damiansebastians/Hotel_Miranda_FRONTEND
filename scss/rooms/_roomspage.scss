@@ -1,74 +1,88 @@
 @import "../variables";
-@import '../mixins';
+@import "../mixins";
 
 // ROOMS PAGE
 
 @media only screen and (min-width: 320px) {
+  .roomsPage {
+    padding: 48px 20px 0px;
 
+    &__image {
+      width: 100%;
 
-    .roomsPage {
-        padding: 48px 20px 0px;
-
-        &__image {
-            width: 100%;
-
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &__icons {
-            text-align: center;
-
-            &__image {
-                position: relative;
-                bottom: -50%;
-                transform: translateY(-50%);
-                z-index: 9;
-            }
-        }
-
-        &__title {
-            @include menu-subtitle;
-            text-align: center;
-            margin-top: -25px;
-        }
-
-        &__description {
-            @include info-description;
-            text-align: center;
-            padding: 0px 22px;
-            margin-top: 16px;
-            margin-bottom: 0;
-        }
-
-        &__info {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 20px;
-            
-            p:nth-child(1){
-                @include info-cost(16px);
-                font-weight: bold;
-            }
-            
-            p:nth-child(2){
-                @include info-cost(16px);
-                color: #BDBDBD;
-                font-weight: bold;
-                margin-bottom: 52px;
-            }
-        }
-
-        &__pagination {
-            // Estilos para el contenedor .rooms__pagination
-
-            img {
-                // Estilos para la imagen dentro de .rooms__pagination
-            }
-        }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
+    &__icons {
+      text-align: center;
+
+      &__image {
+        position: relative;
+        bottom: -50%;
+        transform: translateY(-50%);
+        z-index: 9;
+      }
+    }
+
+    &__title {
+      @include menu-subtitle;
+      text-align: center;
+      margin-top: -25px;
+    }
+
+    &__description {
+      @include info-description;
+      text-align: center;
+      padding: 0px 22px;
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      p:nth-child(1) {
+        @include info-cost(16px);
+        font-weight: bold;
+      }
+
+      p:nth-child(2) {
+        @include info-cost(16px);
+        color: #bdbdbd;
+        font-weight: bold;
+        margin-bottom: 52px;
+      }
+    }
+
+    &__pagination {
+      // Estilos para el contenedor .rooms__pagination
+
+      img {
+        // Estilos para la imagen dentro de .rooms__pagination
+      }
+    }
+  }
+}
+
+// Desktop
+
+@media only screen and (min-width: 1000px) {
+  .ultimate {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+
+  .ultimate__box {
+    position: relative;
+    bottom: -125px;
+    height: 50px;
+  }
 }
