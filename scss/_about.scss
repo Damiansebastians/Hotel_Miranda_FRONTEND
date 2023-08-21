@@ -22,7 +22,6 @@
     &__title {
       font-family: "Old Standard TT";
       font-size: 3.5rem;
-      text-align: center;
       vertical-align: top;
       letter-spacing: -1.2px;
       color: #111111;
@@ -47,7 +46,8 @@
       margin-top: 24px;
     }
 
-    &__image {
+    &__image,
+    &__image2 {
       width: 70%;
       height: 300px;
       position: relative;
@@ -128,6 +128,72 @@
 // Desktop
 
 @media only screen and (min-width: 1000px) {
+  .about {
+    width: 90%;
+    display: grid;
+    margin: 120px auto;
+    grid-template-columns: minmax(25%, auto) minmax(25%, auto) minmax(50%, auto);
+    grid-gap: 40px;
+  }
+
+  .about__text,
+  .about__title,
+  .about__description,
+  .about__button {
+    grid-column: 3;
+    display: flex;
+  }
+
+  .about__section {
+    width: auto;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about__section2 {
+    width: auto;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .about__image {
+    width: auto;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #ffffff;
+  }
+
+  .about__image2 {
+    width: auto;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #ffffff;
+  }
+
+  .about__text {
+    margin-top: 120px;
+  }
+
+  .about__title {
+    margin-top: -170px;
+    text-align: start;
+  }
+
+  .about__description {
+    width: 350px;
+    margin-top: -380px;
+  }
+
+  .about__button {
+    margin-top: -190px;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .ultimate {
     display: flex;
     justify-content: space-around;
