@@ -261,4 +261,12 @@
       color: $gold-color;
     }
   }
+
+  .menu__achievements {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
