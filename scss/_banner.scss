@@ -1,45 +1,73 @@
 @import "variables";
-@import 'mixins';
+@import "mixins";
 
 // BANNER
 
 @media only screen and (min-width: 320px) {
+  .banner {
+    flex-direction: column;
+    background-color: $banner-bg-color;
+    color: #ffffff;
+    padding: 75px 0px 76px 20px;
+    margin-top: 73px;
 
-    .banner {
-        flex-direction: column;
-        background-color: $banner-bg-color;
-        color: #FFFFFF;
-        padding: 75px 0px 76px 20px ;
-        margin-top: 73px ;
-
-            
-            &__title {
-                @include banner-text;
-                width: 75%;
-            }
-
-            &__description {
-                @include description-text;
-                margin-top: 40px;
-            }
-
-        &__buttons {
-
-            .banner__button--primary {
-                @include boton-gold;
-                margin-top: 40px;
-                display: block;
-                }
-                
-            .banner__button--secondary {
-                @include boton-learn;
-                margin-top: 24px;
-                display: block;
-            }
-        }
+    &__title {
+      @include banner-text;
+      width: 75%;
     }
 
+    &__description {
+      @include description-text;
+      margin-top: 40px;
+    }
 
+    &__buttons {
+      .banner__button--primary {
+        @include boton-gold;
+        margin-top: 40px;
+        display: block;
+      }
 
+      .banner__button--secondary {
+        @include boton-learn;
+        margin-top: 24px;
+        display: block;
+      }
+    }
+  }
+}
 
+@media only screen and (min-width: 1000px) {
+  .banner {
+    padding-top: 120px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__description {
+      max-width: 700px;
+      color: #fff;
+      font-family: "Old Standard TT";
+      font-size: 120px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130px;
+      letter-spacing: -3.6px;
+    }
+
+    &__buttons {
+      .banner__button--primary,
+      .banner__button--secondary {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .banner__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 }
