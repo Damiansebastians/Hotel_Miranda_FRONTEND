@@ -529,6 +529,13 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .roomsPage {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
   .rooms {
     margin: 50px auto;
     width: 80%;
@@ -1601,6 +1608,12 @@
   }
 }
 @media only screen and (min-width: 1000px) {
+  .roomsPage {
+    padding: 0px;
+  }
+  .roomsPage__pagination {
+    grid-column: 2;
+  }
   .ultimate {
     display: flex;
     justify-content: space-around;
