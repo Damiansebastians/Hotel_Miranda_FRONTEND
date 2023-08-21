@@ -141,6 +141,10 @@
       align-items: center;
     }
 
+    .image__donnut2 {
+      display: none;
+    }
+
     .menu__achievements {
       background-color: $availability-bg-color;
       padding-top: 48px;
@@ -246,6 +250,23 @@
     margin: 10px;
   }
 
+  .menu {
+    width: 70%;
+    margin: 50px auto;
+  }
+
+  .image__donnut {
+    display: none;
+  }
+
+  .menu .image__donnut2 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -20%;
+  }
+
   .menu__desktop {
     gap: 30px;
     list-style-type: none;
@@ -263,10 +284,13 @@
   }
 
   .menu__achievements {
-    width: 70%;
-    margin: 50px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .facilities {
+    width: 30%;
+    margin: 50px auto;
   }
 }
