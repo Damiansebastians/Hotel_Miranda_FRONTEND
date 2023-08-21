@@ -816,6 +816,7 @@
     width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff;
@@ -824,8 +825,25 @@
   .toggle__menu {
     display: none;
   }
+  .header__logo {
+    margin-right: 15%;
+  }
+  .header__search-button {
+    position: absolute;
+    right: 45px;
+    border: 1px solid #7e7b7b;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .header__user-button {
+    position: absolute;
+    right: 90px;
+    border: 1px solid #7e7b7b;
+    border-radius: 5px;
+    margin: 10px;
+  }
   .menu__desktop {
-    gap: 10px;
+    gap: 30px;
     list-style-type: none;
     display: flex;
     justify-content: center;

@@ -1,94 +1,72 @@
 @import "variables";
-@import 'mixins';
+@import "mixins";
 
 // HEADER
 
 @media only screen and (min-width: 320px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: $header-bg-color;
+    color: $header-color;
+    z-index: 99;
+    top: 0;
 
-    .header {
-        position: fixed;
-        width: 100%;
-        background-color: $header-bg-color;
-        color: $header-color;
-        z-index: 99;
-        top: 0;
-
-        &__navbar {
-            position: relative;
-            z-index: 100;
-            width: 100%;
-            display: flex;
-            padding: 0px 15px;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.29);
-        }
-
-        &__toggle,
-        &__logo,
-        &__user-button,
-        &__search-button {
-            padding: $menu-padding;
-        }
-
-        &__item {
-            padding: $menu-padding;
-        }
-
-        .toggle__menu {
-            cursor: pointer;
-            width: 25px;
-            height: 25px;
-
-            &__close {
-                display: none;
-            }
-        }
-
-        .menu__mobile {
-            position: absolute;
-            width: 100%;
-            top: 100%;
-            left: 0px;
-            background-color: $header-bg-color;
-            color: $header-color;
-            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
-
-            .menu__item {
-                padding-left: 21px;
-                margin-bottom: 23px;
-                list-style-type: none;
-
-                & a{
-                    @include menu-items;
-                    text-decoration: none;
-                }
-
-                a:hover {
-                    color: $gold-color;
-                }
-            }
-        }
+    &__navbar {
+      position: relative;
+      z-index: 100;
+      width: 100%;
+      display: flex;
+      padding: 0px 15px;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.29);
     }
 
+    &__toggle,
+    &__logo,
+    &__user-button,
+    &__search-button {
+      padding: $menu-padding;
+    }
+
+    &__item {
+      padding: $menu-padding;
+    }
+
+    .toggle__menu {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+
+      &__close {
+        display: none;
+      }
+    }
+
+    .menu__mobile {
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0px;
+      background-color: $header-bg-color;
+      color: $header-color;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+
+      .menu__item {
+        padding-left: 21px;
+        margin-bottom: 23px;
+        list-style-type: none;
+
+        & a {
+          @include menu-items;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $gold-color;
+        }
+      }
+    }
+  }
 }
-
-// VERSION DESKTOP
-
-//     @media screen and (min-width: 1000px) {
-
-//     .header{
-
-//         &__menu {
-//             display: block;
-//         }
-
-//         &__navbar {
-//             justify-content: space-between;
-//         }
-//         .menu__mobile {
-//             width: 100%;
-//             position: relative;
-//         }
-//     }
-// }
