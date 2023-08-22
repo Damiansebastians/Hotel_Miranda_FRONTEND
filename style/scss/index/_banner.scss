@@ -6,7 +6,10 @@
 @media only screen and (min-width: 320px) {
   .banner {
     flex-direction: column;
-    background-color: $banner-bg-color;
+    background-image: url("../assets/index/banner_background.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    // background-color: $banner-bg-color;
     color: #ffffff;
     padding: 75px 0px 76px 20px;
     margin-top: 73px;
@@ -19,11 +22,13 @@
     &__description {
       @include description-text;
       margin-top: 40px;
+      color: $gold-color;
     }
 
     &__buttons {
       .banner__button--primary {
         @include boton-gold;
+        border: $gold-color;
         margin-top: 40px;
         display: block;
       }

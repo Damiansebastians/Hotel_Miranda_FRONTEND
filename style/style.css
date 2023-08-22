@@ -60,7 +60,9 @@
 @media only screen and (min-width: 320px) {
   .banner {
     flex-direction: column;
-    background-color: #333333;
+    background-image: url("../assets/index/banner_background.jpg");
+    background-size: cover;
+    opacity: 0.5;
     color: #ffffff;
     padding: 75px 0px 76px 20px;
     margin-top: 73px;
@@ -87,6 +89,7 @@
     letter-spacing: -1.2px;
     color: #FFFFFF;
     margin-top: 40px;
+    color: #BEAD8E;
   }
   .banner__buttons .banner__button--primary {
     font-family: "Archivo";
@@ -102,6 +105,7 @@
     height: 60px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border: #BEAD8E;
     margin-top: 40px;
     display: block;
   }
