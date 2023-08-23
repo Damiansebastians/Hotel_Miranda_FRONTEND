@@ -61,8 +61,8 @@
   .banner {
     flex-direction: column;
     background-image: url("../assets/index/banner_background.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    opacity: 0.5;
     color: #ffffff;
     padding: 75px 0px 76px 20px;
     margin-top: 73px;

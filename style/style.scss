@@ -1,25 +1,25 @@
 
-@use "header";
-@use "banner";
-@use "availability";
-@use "about";
-@use "rooms";
-@use "slider";
-@use "intro";
-@use "facilities";
-@use "menu";
-@use "footer";
-@use "./aboutUs/ultimate";
-@use "./aboutUs/info";
-@use "../scss/aboutUs/facilities_about";
-@use "../scss/rooms/roomspage";
-@use "../scss/roomsDetails";
-@use "../scss/contact/contact";
-@use "../scss/offers/offers";
+@use "./scss/header/header";
+@use "./scss/index/banner";
+@use "./scss/index/availability";
+@use "./scss/index/about";
+@use "./scss/index/rooms";
+@use "./scss/sliders/slider";
+@use "./scss/index/intro";
+@use "./scss/index/facilities";
+@use "./scss/index/menu";
+@use "./scss/footer/footer";
+@use "./scss/aboutUs/ultimate";
+@use "./scss/aboutUs/info";
+@use "./scss/aboutUs/facilities_about";
+@use "./scss/rooms/roomspage";
+@use "./scss/roomsDetails/roomsDetails";
+@use "./scss/contact/contact";
+@use "./scss/offers/offers";
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
-@import "variables";
-@import 'mixins';
+@import "./scss/variables";
+@import './scss/mixins';
 
 * {
     box-sizing: border-box;
