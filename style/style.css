@@ -107,6 +107,8 @@
     border: #BEAD8E;
     margin-top: 40px;
     display: block;
+    text-decoration: none;
+    padding: 22px 0;
   }
   .banner__buttons .banner__button--primary:hover {
     transform: scale(1.1);
@@ -127,6 +129,8 @@
     transition: transform 0.3s ease;
     margin-top: 24px;
     display: block;
+    text-decoration: none;
+    padding: 22px 0;
   }
   .banner__buttons .banner__button--secondary:hover {
     transform: scale(1.1);

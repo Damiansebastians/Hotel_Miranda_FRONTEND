@@ -29,12 +29,18 @@
         border: $gold-color;
         margin-top: 40px;
         display: block;
+        text-decoration: none;
+        padding: 22px 0;
+    
       }
 
       .banner__button--secondary {
         @include boton-learn;
         margin-top: 24px;
         display: block;
+        text-decoration: none;
+        padding: 22px 0;
+    
       }
     }
   }
