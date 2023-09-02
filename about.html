@@ -1,277 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
     <title>About Us - Hotel Miranda</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header__top">
-            <p>We Make Your Feel Comfortable</p>
+      <div class="header__top">
+        <p>We Make Your Feel Comfortable</p>
+      </div>
+      <div class="header__navbar">
+        <div class="header__toggle">
+          <div class="toggle__menu">
+            <img
+              class="toggle__menu__close"
+              src="./assets/header/close_menu_mobile.png"
+              alt="Menu close"
+            />
+            <img
+              class="toggle__menu__open"
+              src="./assets/header/open_menu_mobile.png"
+              alt="Menu open"
+            />
+          </div>
+          <ul class="menu__mobile" style="display: none">
+            <li class="menu__item"><a href="about.html">About Us</a></li>
+            <li class="menu__item"><a href="rooms.html">Rooms</a></li>
+            <li class="menu__item"><a href="offers.html">Offers</a></li>
+            <li class="menu__item"><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="header__navbar">
-            <div class="header__toggle">
-                <div class="toggle__menu">
-                    <img class="toggle__menu__close" src="./assets/header/close_menu_mobile.png" alt="Menu close">
-                    <img class="toggle__menu__open" src="./assets/header/open_menu_mobile.png" alt="Menu open">
-                </div>
-                <ul class="menu__mobile" style="display: none;">
-                    <li class="menu__item"><a href="about.html">About Us</a></li>
-                    <li class="menu__item"><a href="rooms.html">Rooms</a></li>
-                    <li class="menu__item"><a href="offers.html">Offers</a></li>
-                    <li class="menu__item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="header__logo"><a href="index.html"><img src="./assets/header/logo_mobile.png" alt="Logo"></a>
-            </div>
-            <div class="desktop">
-                <ul class="menu__desktop">
-                    <li class="menu__desktop__item"><a href="about.html">About Us</a></li>
-                    <li class="menu__desktop__item"><a href="rooms.html">Rooms</a></li>
-                    <li class="menu__desktop__item"><a href="offers.html">Offers</a></li>
-                    <li class="menu__desktop__item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="header__user-button"><img src="./assets/header/login_mobile.png" alt="UserLogin"></div>
-            <div class="header__search-button"><img src="./assets/header/search_mobile.png" alt="Search"></div>
+        <div class="header__logo">
+          <a href="index.html"
+            ><img src="./assets/header/logo_mobile.png" alt="Logo"
+          /></a>
         </div>
+        <div class="desktop">
+          <ul class="menu__desktop">
+            <li class="menu__desktop__item">
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="menu__desktop__item"><a href="rooms.html">Rooms</a></li>
+            <li class="menu__desktop__item">
+              <a href="offers.html">Offers</a>
+            </li>
+            <li class="menu__desktop__item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__user-button">
+          <img src="./assets/header/login_mobile.png" alt="UserLogin" />
+        </div>
+        <div class="header__search-button">
+          <img src="./assets/header/search_mobile.png" alt="Search" />
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
     <main>
-        <section class="ultimate">
-            <div>
-                <p class="ultimate__title">THE ULTIMATE LUXURY</p>
-                <h2 class="ultimate__description">About Us</h2>
-            </div>
-            <div class="ultimate__box">
-                <span class="ultimate__box--link">
-                    <a href="index.html">Home |&nbsp;</a>
-                    <a href="about.html">About Us</a>
-                </span>
-            </div>
-        </section>
+      <section class="ultimate">
+        <div>
+          <p class="ultimate__title">THE ULTIMATE LUXURY</p>
+          <h2 class="ultimate__description">About Us</h2>
+        </div>
+        <div class="ultimate__box">
+          <span class="ultimate__box--link">
+            <a href="index.html">Home |&nbsp;</a>
+            <a href="about.html">About Us</a>
+          </span>
+        </div>
+      </section>
 
-        <!-- INFO -->
-        <section class="info">
-            <video src="./video/HotelMiranda.mp4" autoplay muted class="info__video">Your browser does not support video
-                playback</video>
-            <h2 class="info__title">Hello. Our hotel has been present for over 20 years. We make the best for all our
-                customers.</h2>
-            <div class="info__content">
-                <span>
-                    <div class="info__content-item">
-                        <img src="./assets/aboutUs/breakfast_mobile.png" alt="Breakfast" class="info__content-img">
-                        <p class="info__content-text">Breakfast</p>
-                    </div>
-                    <div class="info__content-item" id="item-gold">
-                        <img src="./assets/aboutUs/airport_mobile.png" alt="Airplane" class="info__content-img">
-                        <p class="info__content-text">Airport Pickup</p>
-                    </div>
-                </span>
-                <span>
-                    <div class="info__content-item">
-                        <img src="./assets/aboutUs/city_mobile.svg" alt="Gps" class="info__content-img">
-                        <p class="info__content-text">City Guide</p>
-                    </div>
-                    <div class="info__content-item" id="info__bbq">
-                        <img src="./assets/aboutUs/bbq.svg" alt="Bbq" class="info__content-img">
-                        <p class="info__content-text">Bbq party</p>
-                    </div>
-                    <div class="info__content-item">
-                        <img src="./assets/aboutUs/room.svg" alt="Room" class="info__content-img">
-                        <p class="info__content-text">Luxary Room</p>
-                    </div>
-                </span>
+      <!-- INFO -->
+      <section class="info">
+        <video
+          src="./video/HotelMiranda.mp4"
+          autoplay
+          muted
+          class="info__video"
+        >
+          Your browser does not support video playback
+        </video>
+        <h2 class="info__title">
+          Hello. Our hotel has been present for over 20 years. We make the best
+          for all our customers.
+        </h2>
+        <div class="info__content">
+          <span>
+            <div class="info__content-item">
+              <img
+                src="./assets/aboutUs/breakfast_mobile.png"
+                alt="Breakfast"
+                class="info__content-img"
+              />
+              <p class="info__content-text">Breakfast</p>
             </div>
-        </section>
-
-        <!-- RESTAURANT -->
-        <section class="restaurant">
-            <div class="restaurant__picture">
-                <img src="./assets/aboutUs/restaurant_image.jpg" alt="Restaurant" class="restaurant__picture-image">
+            <div class="info__content-item" id="item-gold">
+              <img
+                src="./assets/aboutUs/airport_mobile.png"
+                alt="Airplane"
+                class="info__content-img"
+              />
+              <p class="info__content-text">Airport Pickup</p>
             </div>
-            <h4 class="restaurant__title">Restaurant</h4>
-            <h2 class="restaurant__description">Get Restaurant Facilities & Many Other More</h2>
-            <p class="restaurant__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip.</p>
-            <button class="restaurant__button">Take a Tour</button>
-        </section>
-
-        <!-- FACILITIES ABOUT -->
-        <section class="facilitiesAbout">
-            <h4 class="facilitiesAbout__title">FACILITIES</h4>
-            <h2 class="facilitiesAbout__description">Core Features</h2>
-            <div class="facilitiesAbout__box">
-                <div class="facilitiesAbout__box__number">
-                    <p>01</p>
-                </div>
-                <div class="facilitiesAbout__box__image">
-                    <img src="./assets/aboutUs/facilities_icon_mobile.svg" alt="icon stars">
-                </div>
-                <h3 class="facilitiesAbout__box__subtitle">Have High Rating</h3>
-                <p class="facilitiesAbout__box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </span>
+          <span>
+            <div class="info__content-item">
+              <img
+                src="./assets/aboutUs/city_mobile.svg"
+                alt="Gps"
+                class="info__content-img"
+              />
+              <p class="info__content-text">City Guide</p>
             </div>
-            <div class="facilitiesAbout__pages">
-                <img src="./assets/aboutUs/facilities_pages_about.svg" alt="Pagination">
+            <div class="info__content-item" id="info__bbq">
+              <img
+                src="./assets/aboutUs/bbq.svg"
+                alt="Bbq"
+                class="info__content-img"
+              />
+              <p class="info__content-text">Bbq party</p>
             </div>
-        </section>
-
-        <!-- COUNTER -->
-        <section class="counter">
-            <p class="counter__title">counter</p>
-            <h2 class="counter__description">Some Fun Facts</h2>
-            <span>
-                <div class="counter__items">
-                    <div class="counter__items--image">
-                        <img src="./assets/aboutUs/about_like_mobile.svg" alt="Like icon">
-                    </div>
-                    <div class="counter__items--text">
-                        <p> 8000</p>
-                        <p>Happy Users</p>
-                    </div>
-                    <div class="counter__items--vector">
-                        <img src="./assets/aboutUs/about_arrow_mobile.svg" alt="Arrow icon">
-                    </div>
-                </div>
-
-                <div class="counter__items">
-                    <div class="counter__items--image">
-                        <img src="./assets/aboutUs/about_stars_mobile.svg" alt="Stars icon">
-                    </div>
-                    <div class="counter__items--text">
-                        <p>10M</p>
-                        <p>Reviews & Appriciate</p>
-                    </div>
-                    <div class="counter__items--vector">
-                        <img src="./assets/aboutUs/about_arrow_mobile.svg" alt="Arrow icon">
-                    </div>
-                </div>
-
-                <div class="counter__items">
-                    <div class="counter__items--image">
-                        <img src="./assets/aboutUs/about_world_mobile.svg" alt="World icon">
-                    </div>
-                    <div class="counter__items--text">
-                        <p>100</p>
-                        <p>Country Coverage</p>
-                    </div>
-                    <div class="counter__items--vector">
-                        <img src="./assets/aboutUs/about_arrow_mobile.svg" alt="Arrow icon">
-                    </div>
-                </div>
-            </span>
-            <div class="counter__slider">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/sliders/counter_slider.jpg" alt="Happy Users">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/sliders/counter_slider2.jpg" alt="Teamwork">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            <div class="info__content-item">
+              <img
+                src="./assets/aboutUs/room.svg"
+                alt="Room"
+                class="info__content-img"
+              />
+              <p class="info__content-text">Luxary Room</p>
             </div>
-        </section>
+          </span>
+        </div>
+      </section>
+
+      <!-- RESTAURANT -->
+      <section class="restaurant">
+        <div class="restaurant__picture">
+          <img
+            src="./assets/aboutUs/restaurant_image.jpg"
+            alt="Restaurant"
+            class="restaurant__picture-image"
+          />
+        </div>
+        <div>
+          <h4 class="restaurant__title">Restaurant</h4>
+          <h2 class="restaurant__description">
+            Get Restaurant Facilities & Many Other More
+          </h2>
+          <p class="restaurant__text">
+            Experience a Multitude of Amenities: From Our Restaurant Facilities
+            to an Array of Extraordinary Offerings. Discover a dining experience
+            like no other as you explore our comprehensive range of restaurant
+            amenities. But that's just the beginning – we also provide a host of
+            other exciting options to make your visit truly exceptional.
+          </p>
+          <button class="restaurant__button">Take a Tour</button>
+        </div>
+      </section>
+
+      <!-- FACILITIES ABOUT -->
+      <section class="facilitiesAbout">
+        <h4 class="facilitiesAbout__title">FACILITIES</h4>
+        <h2 class="facilitiesAbout__description">Core Features</h2>
+        <div class="facilitiesAbout__box">
+          <div class="facilitiesAbout__box__number">
+            <p>01</p>
+          </div>
+          <div class="facilitiesAbout__box__image">
+            <img
+              src="./assets/aboutUs/facilities_icon_mobile.svg"
+              alt="icon stars"
+            />
+          </div>
+          <h3 class="facilitiesAbout__box__subtitle">Have High Rating</h3>
+          <p class="facilitiesAbout__box__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+        </div>
+        <div class="facilitiesAbout__pages">
+          <img
+            src="./assets/aboutUs/facilities_pages_about.svg"
+            alt="Pagination"
+          />
+        </div>
+      </section>
+
+      <!-- COUNTER -->
+      <section class="counter">
+        <p class="counter__title">counter</p>
+        <h2 class="counter__description">Some Fun Facts</h2>
+        <span>
+          <div class="counter__items">
+            <div class="counter__items--image">
+              <img
+                src="./assets/aboutUs/about_like_mobile.svg"
+                alt="Like icon"
+              />
+            </div>
+            <div class="counter__items--text">
+              <p>8000</p>
+              <p>Happy Users</p>
+            </div>
+            <div class="counter__items--vector">
+              <img
+                src="./assets/aboutUs/about_arrow_mobile.svg"
+                alt="Arrow icon"
+              />
+            </div>
+          </div>
+
+          <div class="counter__items">
+            <div class="counter__items--image">
+              <img
+                src="./assets/aboutUs/about_stars_mobile.svg"
+                alt="Stars icon"
+              />
+            </div>
+            <div class="counter__items--text">
+              <p>10M</p>
+              <p>Reviews & Appriciate</p>
+            </div>
+            <div class="counter__items--vector">
+              <img
+                src="./assets/aboutUs/about_arrow_mobile.svg"
+                alt="Arrow icon"
+              />
+            </div>
+          </div>
+
+          <div class="counter__items">
+            <div class="counter__items--image">
+              <img
+                src="./assets/aboutUs/about_world_mobile.svg"
+                alt="World icon"
+              />
+            </div>
+            <div class="counter__items--text">
+              <p>100</p>
+              <p>Country Coverage</p>
+            </div>
+            <div class="counter__items--vector">
+              <img
+                src="./assets/aboutUs/about_arrow_mobile.svg"
+                alt="Arrow icon"
+              />
+            </div>
+          </div>
+        </span>
+        <div class="counter__slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/sliders/counter_slider.jpg"
+                  alt="Happy Users"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/sliders/counter_slider2.jpg"
+                  alt="Teamwork"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer">
-
-            <div class="container">
-                <div class="footer__logo">
-                    <img class="footer__logo--image" src="./assets/footer/logo_footer_mobile.png" alt="Logo Hotel">
-                </div>
-                <p class="footer__description">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius
-                    mod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat
-                    ion
-                    ullamco laboris nisi.</p>
-                <div class="footer__socials">
-                    <img class="footer__socials--image" src="./assets/footer/Socials_footer_mobile.png" alt="RRSS">
-                </div>
-            </div>
-
-            <div class="container">
-                <h4 class="footer__title">Services.</h4>
-                <div class="footer__list">
-                    <ul class="footer__list__ul">
-                        <li class="footer__list__ul--item">+ Restaurent &amp Bar</li>
-                        <li class="footer__list__ul--item">+ Swimming Pool</li>
-                        <li class="footer__list__ul--item">+ Wellness &amp Spa</li>
-                        <li class="footer__list__ul--item">+ Restaurant</li>
-                        <li class="footer__list__ul--item">+ Conference Room</li>
-                        <li class="footer__list__ul--item">+ Coctail Party House</li>
-                    </ul>
-                    <ul class="footer__list__ul">
-                        <li class="footer__list__ul--item">+ Gaming Zone</li>
-                        <li class="footer__list__ul--item">+ Marrige Party</li>
-                        <li class="footer__list__ul--item">+ Party Planning</li>
-                        <li class="footer__list__ul--item">+ Tour Consultancy</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="container">
-                <h4 class="footer__contact">Contact Us.</h4>
-                <div class="footer__phone">
-                    <div class="group">
-                        <div class="item">
-                            <div class="footer__phone__image">
-                                <img src="./assets/footer/phono_footer_mobile.svg" alt="phono icon">
-                            </div>
-                            <div class="footer__phone__number">
-                                <p>Phone Number</p>
-                                <p>+987 876 765 76 577</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="footer__phone__image">
-                                <img src="./assets/footer/mail_footer_mobile.svg" alt="mail icon">
-                            </div>
-                            <div class="footer__phone__number">
-                                <p>Email</p>
-                                <p>info@webmail.com jobs.webmail@mail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="item" id="item3">
-                            <div class="footer__phone__image">
-                                <img src="./assets/footer/gps_footer_mobile.svg" alt="gps icon">
-                            </div>
-                            <div class="footer__phone__number">
-                                <p>Hotel Address</p>
-                                <p>19/A, Cirikon City hall Tower New York, NYC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__logo">
+            <img
+              class="footer__logo--image"
+              src="./assets/footer/logo_footer_mobile.png"
+              alt="Logo Hotel"
+            />
+          </div>
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="footer__socials">
+            <img
+              class="footer__socials--image"
+              src="./assets/footer/Socials_footer_mobile.png"
+              alt="RRSS"
+            />
+          </div>
         </div>
 
-        <div class="finish">
-            <p class="finish__copyright">Copyright By@Example - 2020</p>
-            <p class="finish__terms">Terms of use | Privacy Environmental Policy</p>
+        <div class="container">
+          <h4 class="footer__title">Services.</h4>
+          <div class="footer__list">
+            <ul class="footer__list__ul">
+              <li class="footer__list__ul--item">+ Restaurent &amp Bar</li>
+              <li class="footer__list__ul--item">+ Swimming Pool</li>
+              <li class="footer__list__ul--item">+ Wellness &amp Spa</li>
+              <li class="footer__list__ul--item">+ Restaurant</li>
+              <li class="footer__list__ul--item">+ Conference Room</li>
+              <li class="footer__list__ul--item">+ Coctail Party House</li>
+            </ul>
+            <ul class="footer__list__ul">
+              <li class="footer__list__ul--item">+ Gaming Zone</li>
+              <li class="footer__list__ul--item">+ Marrige Party</li>
+              <li class="footer__list__ul--item">+ Party Planning</li>
+              <li class="footer__list__ul--item">+ Tour Consultancy</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="container">
+          <h4 class="footer__contact">Contact Us.</h4>
+          <div class="footer__phone">
+            <div class="group">
+              <div class="item">
+                <div class="footer__phone__image">
+                  <img
+                    src="./assets/footer/phono_footer_mobile.svg"
+                    alt="phono icon"
+                  />
+                </div>
+                <div class="footer__phone__number">
+                  <p>Phone Number</p>
+                  <p>+987 876 765 76 577</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="footer__phone__image">
+                  <img
+                    src="./assets/footer/mail_footer_mobile.svg"
+                    alt="mail icon"
+                  />
+                </div>
+                <div class="footer__phone__number">
+                  <p>Email</p>
+                  <p>info@webmail.com jobs.webmail@mail.com</p>
+                </div>
+              </div>
+
+              <div class="item" id="item3">
+                <div class="footer__phone__image">
+                  <img
+                    src="./assets/footer/gps_footer_mobile.svg"
+                    alt="gps icon"
+                  />
+                </div>
+                <div class="footer__phone__number">
+                  <p>Hotel Address</p>
+                  <p>19/A, Cirikon City hall Tower New York, NYC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="finish">
+        <p class="finish__copyright">Copyright By@Example - 2020</p>
+        <p class="finish__terms">Terms of use | Privacy Environmental Policy</p>
+      </div>
     </footer>
 
     <script src="./scripts/main.js"></script>
     <script src="./scripts/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>

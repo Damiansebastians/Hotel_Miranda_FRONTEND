@@ -143,4 +143,20 @@
       height: 53px;
     }
   }
+
+  .restaurant{
+    width: 70%;
+    display: grid;
+    margin: 30px auto;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+
+    &__picture{
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 0px;
+
+    }
+  }
 }
