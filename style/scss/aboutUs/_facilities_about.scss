@@ -19,11 +19,12 @@
       margin-top: 16px;
       color: #ffffff;
     }
-
+    
     &__box {
-      margin-top: 32px;
-      background-color: #292929;
-      padding-bottom: 51px;
+        margin-top: 32px;
+        background-color: #292929;
+        padding-bottom: 51px;
+        // display: none;
 
       &__number {
         @include box-number;
@@ -63,6 +64,10 @@
         cursor: pointer;
       }
     }
+
+    // #box_one{
+    //     display: block;
+    // }
   }
 
   .counter {
@@ -169,4 +174,22 @@
 // Desktop
 
 @media only screen and (min-width: 1000px) {
+  .facilitiesAbout {
+    &__container {
+      width: 90%;
+      display: grid;
+      margin: 25px auto;
+      padding: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+
+  .facilitiesAbout__box{
+    margin-top: 0px;
+  }
+
+  .facilitiesAbout__pages {
+    display: none;
+  }
 }

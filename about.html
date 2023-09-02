@@ -174,28 +174,107 @@
       <section class="facilitiesAbout">
         <h4 class="facilitiesAbout__title">FACILITIES</h4>
         <h2 class="facilitiesAbout__description">Core Features</h2>
-        <div class="facilitiesAbout__box">
-          <div class="facilitiesAbout__box__number">
-            <p>01</p>
+
+        <div class="facilitiesAbout__container">
+          <div class="facilitiesAbout__box" id="page1">
+            <div class="facilitiesAbout__box__number">
+              <p>01</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img
+                src="./assets/aboutUs/facilities_icon_mobile.svg"
+                alt="icon stars"
+              />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Have High Rating</h3>
+            <p class="facilitiesAbout__box__text">
+              Experience excellence at its finest with accommodations that have
+              received consistently high ratings from our satisfied guests.
+            </p>
           </div>
-          <div class="facilitiesAbout__box__image">
-            <img
-              src="./assets/aboutUs/facilities_icon_mobile.svg"
-              alt="icon stars"
-            />
+
+          <div class="facilitiesAbout__box" id="page2">
+            <div class="facilitiesAbout__box__number">
+              <p>02</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img src="./assets/aboutUs/icon2.svg" alt="icon stars" />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Quiet Hours</h3>
+            <p class="facilitiesAbout__box__text">
+              Enjoy tranquility and relaxation during your stay with our
+              designated quiet hours.
+            </p>
           </div>
-          <h3 class="facilitiesAbout__box__subtitle">Have High Rating</h3>
-          <p class="facilitiesAbout__box__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+
+          <div class="facilitiesAbout__box" id="page3">
+            <div class="facilitiesAbout__box__number">
+              <p>03</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img src="./assets/aboutUs/icon3.svg" alt="icon stars" />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Best Locations</h3>
+            <p class="facilitiesAbout__box__text">
+              Discover the beauty and convenience of our prime locations. We've
+              carefully selected the most desirable spots for our accommodations
+              to ensure that you're always in the heart of the action.
+            </p>
+          </div>
+
+          <div class="facilitiesAbout__box" id="page4">
+            <div class="facilitiesAbout__box__number">
+              <p>04</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img
+                src="./assets/aboutUs/icon4.svg"
+                alt="icon Free Cancellation"
+              />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Free Cancellation</h3>
+            <p class="facilitiesAbout__box__text">
+              Flexibility is key when planning your trip, which is why we offer
+              hassle-free, free cancellation options.
+            </p>
+          </div>
+
+          <div class="facilitiesAbout__box" id="page5">
+            <div class="facilitiesAbout__box__number">
+              <p>05</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img
+                src="./assets/aboutUs/icon5.svg"
+                alt="icon Payment Options"
+              />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Payment Options</h3>
+            <p class="facilitiesAbout__box__text">
+              We believe in providing convenience every step of the way,
+              starting with flexible payment options.
+            </p>
+          </div>
+
+          <div class="facilitiesAbout__box" id="page6">
+            <div class="facilitiesAbout__box__number">
+              <p>06</p>
+            </div>
+            <div class="facilitiesAbout__box__image">
+              <img src="./assets/aboutUs/icon6.svg" alt="icon Special Offers" />
+            </div>
+            <h3 class="facilitiesAbout__box__subtitle">Special Offers</h3>
+            <p class="facilitiesAbout__box__text">
+              Unlock exclusive deals and savings with our special offers. We're
+              dedicated to providing you with added value during your stay.
+            </p>
+          </div>
         </div>
+
         <div class="facilitiesAbout__pages">
-          <img
-            src="./assets/aboutUs/facilities_pages_about.svg"
-            alt="Pagination"
-          />
-        </div>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+          </div>
       </section>
 
       <!-- COUNTER -->
@@ -381,6 +460,7 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/pagination.js"></script>
     <script src="./scripts/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>

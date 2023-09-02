@@ -1597,6 +1597,22 @@
     background-color: #BEAD8E;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .facilitiesAbout__container {
+    width: 90%;
+    display: grid;
+    margin: 25px auto;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .facilitiesAbout__box {
+    margin-top: 0px;
+  }
+  .facilitiesAbout__pages {
+    display: none;
+  }
+}
 @media only screen and (min-width: 320px) {
   .roomsPage {
     padding: 48px 20px 0px;
