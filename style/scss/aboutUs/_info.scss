@@ -4,101 +4,143 @@
 // INFO
 
 @media only screen and (min-width: 320px) {
+  .info {
+    padding: 60px 20px 20px;
+    background-color: #ffffff;
 
-    .info {
-        padding: 60px 20px 20px;
-        background-color: #ffffff;
-
-        &__video {
-            width: 100%;
-        }
-
-        &__title {
-            @include info-description_about;
-            margin-top: 36px;
-        }
-
-        &__content {
-            margin-top: 51px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            & span {
-                display: flex;
-                gap: 20px;
-                margin-bottom: 20px;
-            }
-
-            &-item {
-                max-width: 155px;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                & .info__content-img {
-                    margin: 44px 50px 18px;
-                }
-
-                & .info__content-text {
-                    @include info_text;
-                    margin-bottom: 38px;
-                    text-align: center;
-                }
-            }
-
-            #item-gold {
-                background-color: $gold-color;
-
-                p {
-                    color: #ffffff;
-                }
-            }
-        }
+    &__video {
+      width: 100%;
     }
 
-    .restaurant {
-        background: #ffffff;
-        box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.10);
-        margin-top: 31px;
-        padding: 20px;
-
-        &__picture {
-            margin-bottom: 32px;
-
-            .restaurant__picture-image {
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &__title {
-            @include rooms-title;
-            text-transform: uppercase;
-            text-align: left;
-            margin-bottom: 26px;
-        }
-
-        &__description {
-            @include restaurant-description;
-            margin-bottom: 26px;
-        }
-
-        &__text {
-            font-family: 'Archivo';
-            font-size: 14px;
-            color: #777777;
-            line-height: 24px;
-            margin-bottom: 16px;
-        }
-
-        &__button {
-            @include boton-gold;
-            border: $gold-color;
-            text-transform: uppercase;
-            box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
-        }
+    &__title {
+      @include info-description_about;
+      margin-top: 36px;
     }
 
+    &__content {
+      margin-top: 51px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
+      & span {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      &-item {
+        max-width: 155px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: transform 0.3s ease-in-out;
+
+        & .info__content-img {
+          margin: 44px 50px 18px;
+        }
+
+        & .info__content-text {
+          @include info_text;
+          margin-bottom: 38px;
+          text-align: center;
+        }
+      }
+
+      #info__bbq {
+        display: none;
+      }
+
+      #item-gold {
+        background-color: $gold-color;
+
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .info__content-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+  }
+
+  .restaurant {
+    background: #ffffff;
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+    margin-top: 31px;
+    padding: 20px;
+
+    &__picture {
+      margin-bottom: 32px;
+
+      .restaurant__picture-image {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      @include rooms-title;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 26px;
+    }
+
+    &__description {
+      @include restaurant-description;
+      margin-bottom: 26px;
+    }
+
+    &__text {
+      font-family: "Archivo";
+      font-size: 14px;
+      color: #777777;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    &__button {
+      @include boton-gold;
+      border: $gold-color;
+      text-transform: uppercase;
+      box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+    }
+  }
+}
+
+// Desktop
+
+@media only screen and (min-width: 1000px) {
+  .info {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 30px 15px;
+
+    &__title {
+      font-size: 55px;
+      letter-spacing: -2.16px;
+      padding: 0px 45px;
+      margin-top: 65px;
+    }
+
+    &__content {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      #info__bbq {
+        display: block;
+      }
+    }
+    .info__content-item .info__content-img {
+      width: 54px;
+      height: 53px;
+    }
+  }
 }

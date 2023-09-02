@@ -650,8 +650,8 @@
 }
 @media only screen and (min-width: 1000px) {
   .intro {
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1236,6 +1236,14 @@
     text-decoration: none;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .ultimate {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+}
 @media only screen and (min-width: 320px) {
   .info {
     padding: 60px 20px 20px;
@@ -1269,6 +1277,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
   }
   .info__content-item .info__content-img {
     margin: 44px 50px 18px;
@@ -1285,11 +1294,19 @@
     margin-bottom: 38px;
     text-align: center;
   }
+  .info__content #info__bbq {
+    display: none;
+  }
   .info__content #item-gold {
     background-color: #BEAD8E;
   }
   .info__content #item-gold p {
     color: #ffffff;
+  }
+  .info__content-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
   }
   .restaurant {
     background: #ffffff;
@@ -1354,6 +1371,34 @@
     transform: scale(1.1);
   }
 }
+@media only screen and (min-width: 1000px) {
+  .info {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 30px 15px;
+  }
+  .info__title {
+    font-size: 55px;
+    letter-spacing: -2.16px;
+    padding: 0px 45px;
+    margin-top: 65px;
+  }
+  .info__content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .info__content #info__bbq {
+    display: block;
+  }
+  .info .info__content-item .info__content-img {
+    width: 54px;
+    height: 53px;
+  }
+}
 @media only screen and (min-width: 320px) {
   .facilitiesAbout {
     padding: 48px 20px 42px;
@@ -1368,7 +1413,7 @@
     letter-spacing: 2.8px;
     color: #777777;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .facilitiesAbout__description {
     font-family: "Old Standard TT";
@@ -1380,7 +1425,7 @@
     letter-spacing: -1.2px;
     color: #222222;
     margin-top: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .facilitiesAbout__box {
     margin-top: 32px;
@@ -1414,7 +1459,7 @@
     vertical-align: top;
     letter-spacing: -0.9px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-left: 16px;
   }
   .facilitiesAbout__box__text {
@@ -1425,7 +1470,7 @@
     text-align: left;
     vertical-align: top;
     color: #c2c2c2;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 28px;
     padding: 0px 67px 0px 18px;
   }
@@ -1533,7 +1578,7 @@
     justify-content: center;
   }
   .counter .counter__slider .swiper-pagination-bullet {
-    background-color: #EDEDED;
+    background-color: #ededed;
   }
   .counter .counter__slider .swiper-pagination-bullet-active {
     background-color: #BEAD8E;
