@@ -1,183 +1,183 @@
 @import "../variables";
 @import "../mixins";
 
-@media only screen and (min-width: 320px) {
-  .offers {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 48px;
-    &__prices {
-      position: relative;
-      img {
-        width: 100%;
-      }
-      &-text {
-        position: absolute;
-        display: inline;
-        bottom: 10%;
-        left: 90%;
-        transform: translate(-90%, -10%);
-        display: inline;
-        margin: 0;
-        background: #000000a8;
-      }
-      h5:first-child {
-        text-decoration: line-through;
-        font-size: 23px;
-      }
-      h5:last-child {
-        color: #de5777;
-      }
-    }
-    h6 {
-      margin-top: 16px;
-      font-family: "Archivo";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 15px;
-      letter-spacing: 2.8px;
-      text-transform: uppercase;
+// @media only screen and (min-width: 320px) {
+//   .offers {
+//     width: 90%;
+//     margin: 0 auto;
+//     margin-top: 48px;
+//     &__prices {
+//       position: relative;
+//       img {
+//         width: 100%;
+//       }
+//       &-text {
+//         position: absolute;
+//         display: inline;
+//         bottom: 10%;
+//         left: 90%;
+//         transform: translate(-90%, -10%);
+//         display: inline;
+//         margin: 0;
+//         background: #000000a8;
+//       }
+//       h5:first-child {
+//         text-decoration: line-through;
+//         font-size: 23px;
+//       }
+//       h5:last-child {
+//         color: #de5777;
+//       }
+//     }
+//     h6 {
+//       margin-top: 16px;
+//       font-family: "Archivo";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 14px;
+//       line-height: 15px;
+//       letter-spacing: 2.8px;
+//       text-transform: uppercase;
 
-      color: #777777;
-    }
-    &__title {
-      width: 80%;
-      margin-left: 0;
-    }
-    p {
-      margin-top: 16px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #777777;
-    }
-  }
-  .book-now {
-    margin-top: 36px;
-    margin-bottom: 48px;
-    margin-left: 5%;
-    width: 216px;
-    height: 60px;
-    left: 0px;
-    top: 0px;
-    border: none;
-    font-family: "Archivo";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
+//       color: #777777;
+//     }
+//     &__title {
+//       width: 80%;
+//       margin-left: 0;
+//     }
+//     p {
+//       margin-top: 16px;
+//       font-family: "Roboto";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 24px;
+//       color: #777777;
+//     }
+//   }
+//   .book-now {
+//     margin-top: 36px;
+//     margin-bottom: 48px;
+//     margin-left: 5%;
+//     width: 216px;
+//     height: 60px;
+//     left: 0px;
+//     top: 0px;
+//     border: none;
+//     font-family: "Archivo";
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 15px;
+//     letter-spacing: 2.8px;
+//     text-transform: uppercase;
 
-    color: #ffffff;
-    background-color: #bdac8d;
-  }
-  .amenities-offers {
-    background: #ffffff;
-    box-shadow: 0px 14px 24px rgb(184 184 184 / 10%);
-  }
-  .card-background {
-    background-color: black;
-    margin-top: 60px;
-    &__slider {
-      width: 90%;
-      margin: 0 auto;
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      --swiper-navigation-size: 25px;
-      background-color: white;
-      height: 60px;
-      width: 40px;
-      margin-top: -30px;
-    }
-    .swiper-button-prev {
-      border-radius: 0 65px 65px 0;
-      left: -10px;
-    }
-    .swiper-button-next {
-      border-radius: 65px 0 0 65px;
-      right: -10px;
-    }
-  }
+//     color: #ffffff;
+//     background-color: #bdac8d;
+//   }
+//   .amenities-offers {
+//     background: #ffffff;
+//     box-shadow: 0px 14px 24px rgb(184 184 184 / 10%);
+//   }
+//   .card-background {
+//     background-color: black;
+//     margin-top: 60px;
+//     &__slider {
+//       width: 90%;
+//       margin: 0 auto;
+//     }
+//     .swiper-button-prev,
+//     .swiper-button-next {
+//       --swiper-navigation-size: 25px;
+//       background-color: white;
+//       height: 60px;
+//       width: 40px;
+//       margin-top: -30px;
+//     }
+//     .swiper-button-prev {
+//       border-radius: 0 65px 65px 0;
+//       left: -10px;
+//     }
+//     .swiper-button-next {
+//       border-radius: 65px 0 0 65px;
+//       right: -10px;
+//     }
+//   }
 
-  .services {
-    width: 256px;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    bottom: 20px;
-    z-index: 50;
-    background: white;
-    margin: 0 auto;
-    box-shadow: 0px 8px 16px rgb(138 138 138 / 5%);
-  }
-  .card-info {
-    margin: 0 auto;
-    width: 90%;
-    padding-bottom: 20px;
-    text-align: center;
-    position: relative;
-    background: #ffffff;
-    z-index: 5;
-    bottom: 50px;
-    h4 {
-      margin-top: 28px;
-      padding-top: 20px;
-      font-family: "Old Standard TT";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 36px;
-      letter-spacing: -1.2px;
-      color: #222222;
-    }
-    p {
-      margin: 0 auto;
-      width: 80%;
-      margin-top: 19px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #777777;
-    }
-    &__price {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 70%;
-      margin: 0 auto;
-      h5 {
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 43px;
-        text-align: center;
-        margin-top: 12px;
-        color: #bead8e;
-        sub {
-          font-size: 12px;
-        }
-      }
-      h6 {
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 17px;
-        text-align: right;
+//   .services {
+//     width: 256px;
+//     position: relative;
+//     display: flex;
+//     justify-content: space-evenly;
+//     bottom: 20px;
+//     z-index: 50;
+//     background: white;
+//     margin: 0 auto;
+//     box-shadow: 0px 8px 16px rgb(138 138 138 / 5%);
+//   }
+//   .card-info {
+//     margin: 0 auto;
+//     width: 90%;
+//     padding-bottom: 20px;
+//     text-align: center;
+//     position: relative;
+//     background: #ffffff;
+//     z-index: 5;
+//     bottom: 50px;
+//     h4 {
+//       margin-top: 28px;
+//       padding-top: 20px;
+//       font-family: "Old Standard TT";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 28px;
+//       line-height: 36px;
+//       letter-spacing: -1.2px;
+//       color: #222222;
+//     }
+//     p {
+//       margin: 0 auto;
+//       width: 80%;
+//       margin-top: 19px;
+//       font-family: "Roboto";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 24px;
+//       color: #777777;
+//     }
+//     &__price {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-around;
+//       width: 70%;
+//       margin: 0 auto;
+//       h5 {
+//         font-family: "Archivo";
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 32px;
+//         line-height: 43px;
+//         text-align: center;
+//         margin-top: 12px;
+//         color: #bead8e;
+//         sub {
+//           font-size: 12px;
+//         }
+//       }
+//       h6 {
+//         font-family: "Archivo";
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 16px;
+//         line-height: 17px;
+//         text-align: right;
 
-        color: #bdbdbd;
-      }
-    }
-  }
-}
+//         color: #bdbdbd;
+//       }
+//     }
+//   }
+// }
 
 // Desktop
 
@@ -198,33 +198,124 @@
   //OFFERS
 
   .offers {
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 100px;
 
+    &__image {
+      height: 500px;
+      overflow: hidden;
+    }
+
     &__image img {
       width: 100%;
+      height: auto;
     }
 
     &__container {
-      width: 75%;
+      background-color: #ffffff;
+      width: 84%;
       margin: 0 auto;
       position: relative;
-      top: -100px;
+      top: -50px;
+      padding: 30px;
+
+      &--text {
+        & h6 {
+          color: #777;
+          font-family: "Archivo";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 2.8px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        & h1 {
+          color: #222;
+          font-family: "Old Standard TT";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+          letter-spacing: -1.44px;
+        }
+      }
+
+      &--prices {
+        position: absolute;
+        display: inline;
+        top: 30px;
+        right: 50px;
+        text-align: right;
+        font-family: "Archivo";
+        font-weight: 700;
+        line-height: normal;
+
+        h5:first-child {
+          color: #bead8e;
+          font-size: 30px;
+          text-decoration: line-through;
+          sub {
+            font-size: 12px;
+            text-decoration: line-through;
+          }
+        }
+        h5:last-child {
+          color: #de5777;
+          font-size: 40px;
+          sub {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &--line {
+        width: 100%;
+        height: 2px;
+        background-color: #ececec;
+        margin: 30px auto;
+      }
+
+      &--box {
+        display: grid;
+        grid-template-columns: minmax(50%, auto) minmax(25%, auto) minmax(
+            25%,
+            auto
+          );
+        gap: 5%;
+
+        &--button {
+          @include boton-gold;
+          border: #bead8e;
+          margin-top: 5px;
+          text-transform: uppercase;
+          grid-column: 1;
+          grid-row: 2;
+        }
+
+        &--paragraph {
+          color: #777;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        &--amenities1,
+        &--amenities2 {
+          display: grid;
+          gap: 15px;
+          color: #777;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
     }
-
-
-
-  }
-
-  .offers__container--text {
-    width: 11%;
-    bottom: -7%;
-    background: rgb(0 0 0 / 91%);
-  }
-
-  .amenities__list {
-    display: flex;
-    justify-content: space-evenly;
   }
 }
