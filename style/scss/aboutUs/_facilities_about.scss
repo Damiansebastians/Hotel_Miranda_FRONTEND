@@ -24,7 +24,6 @@
       margin-top: 32px;
       background-color: #292929;
       padding-bottom: 51px;
-      // display: none;
 
       &__number {
         @include box-number;
@@ -54,20 +53,6 @@
         padding: 0px 67px 0px 18px;
       }
     }
-
-    &__pages {
-      display: flex;
-      justify-content: center;
-      margin-top: 24px;
-
-      img {
-        cursor: pointer;
-      }
-    }
-
-    // #box_one{
-    //     display: block;
-    // }
   }
 
   .counter {
@@ -131,20 +116,20 @@
     }
 
     .counter__slider {
-        width: 90%;
-        margin: 25px auto;;
-        .swiper {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
+      width: 90%;
+      margin: 25px auto;
+      .swiper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
         align-items: center;
       }
 
@@ -163,7 +148,9 @@
       }
 
       .swiper-pagination-bullet {
-        background-color: #ededed;
+        width: 15px;
+        height: 15px;
+        background-color: #000000;
       }
 
       .swiper-pagination-bullet-active {
@@ -189,10 +176,6 @@
 
   .facilitiesAbout__box {
     margin-top: 0px;
-  }
-
-  .facilitiesAbout__pages {
-    display: none;
   }
 
   .counter {

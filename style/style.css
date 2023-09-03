@@ -1488,14 +1488,6 @@
     margin-top: 28px;
     padding: 0px 67px 0px 18px;
   }
-  .facilitiesAbout__pages {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-  }
-  .facilitiesAbout__pages img {
-    cursor: pointer;
-  }
   .counter {
     margin: 60px 20px 0px;
   }
@@ -1596,7 +1588,9 @@
     justify-content: center;
   }
   .counter .counter__slider .swiper-pagination-bullet {
-    background-color: #ededed;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
   }
   .counter .counter__slider .swiper-pagination-bullet-active {
     background-color: #BEAD8E;
@@ -1613,9 +1607,6 @@
   }
   .facilitiesAbout__box {
     margin-top: 0px;
-  }
-  .facilitiesAbout__pages {
-    display: none;
   }
   .counter {
     width: 70%;
