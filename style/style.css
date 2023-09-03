@@ -1251,6 +1251,7 @@
   }
   .info__video {
     width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
   .info__title {
     color: #222222;
@@ -1564,6 +1565,10 @@
     position: relative;
     margin-right: 20px;
   }
+  .counter .counter__slider {
+    width: 90%;
+    margin: 25px auto;
+  }
   .counter .counter__slider .swiper {
     display: flex;
     flex-direction: column;
@@ -1611,6 +1616,16 @@
   }
   .facilitiesAbout__pages {
     display: none;
+  }
+  .counter {
+    width: 70%;
+    margin: 100px auto 50px;
+  }
+  .counter span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 320px) {

@@ -19,12 +19,12 @@
       margin-top: 16px;
       color: #ffffff;
     }
-    
+
     &__box {
-        margin-top: 32px;
-        background-color: #292929;
-        padding-bottom: 51px;
-        // display: none;
+      margin-top: 32px;
+      background-color: #292929;
+      padding-bottom: 51px;
+      // display: none;
 
       &__number {
         @include box-number;
@@ -131,18 +131,20 @@
     }
 
     .counter__slider {
-      .swiper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
+        width: 90%;
+        margin: 25px auto;;
+        .swiper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
         align-items: center;
       }
 
@@ -185,11 +187,23 @@
     }
   }
 
-  .facilitiesAbout__box{
+  .facilitiesAbout__box {
     margin-top: 0px;
   }
 
   .facilitiesAbout__pages {
     display: none;
+  }
+
+  .counter {
+    width: 70%;
+    margin: 100px auto 50px;
+
+    & span {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 25px;
+    }
   }
 }
