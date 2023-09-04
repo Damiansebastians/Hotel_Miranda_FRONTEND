@@ -318,4 +318,46 @@
       }
     }
   }
+
+  //POPULAR
+
+  .popular {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    &__title {
+      color: #bdac8d;
+      font-family: "Archivo";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      margin-top: 60px;
+    }
+
+    &__description {
+      color: #fff;
+      font-family: "Old Standard TT";
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 80px;
+      letter-spacing: -2.4px;
+      margin-top: 65px;
+    }
+  }
+
+  .roomsPage__box{
+    background-color: #ffffff;
+  }
+
+  #popular__box{
+    width: 75%;
+  }
 }
