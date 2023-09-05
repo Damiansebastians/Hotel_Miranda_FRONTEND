@@ -1873,25 +1873,14 @@
     width: 205%;
   }
 }
-@media only screen and (min-width: 1000px) {
-  .ultimate {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-bottom: 30px;
-  }
-  .ultimate__box {
-    position: relative;
-    bottom: -125px;
-    height: 50px;
-  }
+@media only screen and (min-width: 320px) {
   .offers {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .offers__image {
-    height: 500px;
+    width: 100%;
     overflow: hidden;
   }
   .offers__image img {
@@ -1900,7 +1889,7 @@
   }
   .offers__container {
     background-color: #ffffff;
-    width: 84%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     top: -50px;
@@ -1918,19 +1907,20 @@
     margin-bottom: 10px;
   }
   .offers__container--text h1 {
+    width: 60%;
     color: #222;
     font-family: "Old Standard TT";
-    font-size: 48px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 28px;
     letter-spacing: -1.44px;
   }
   .offers__container--prices {
     position: absolute;
     display: inline;
-    top: 30px;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     text-align: right;
     font-family: "Archivo";
     font-weight: 700;
@@ -1938,7 +1928,7 @@
   }
   .offers__container--prices h5:first-child {
     color: #bead8e;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: line-through;
   }
   .offers__container--prices h5:first-child sub {
@@ -1947,7 +1937,7 @@
   }
   .offers__container--prices h5:last-child {
     color: #de5777;
-    font-size: 40px;
+    font-size: 30px;
   }
   .offers__container--prices h5:last-child sub {
     font-size: 16px;
@@ -1956,11 +1946,12 @@
     width: 100%;
     height: 2px;
     background-color: #ececec;
-    margin: 30px auto;
+    margin: 20px auto;
   }
   .offers__container--box {
     display: grid;
-    grid-template-columns: minmax(50%, auto) minmax(25%, auto) minmax(25%, auto);
+    grid-template-columns: minmax(55%, auto) minmax(45%, auto);
+    grid-template-rows: minmax(60%, auto) minmax(60%, auto);
     gap: 5%;
   }
   .offers__container--box--button {
@@ -1977,8 +1968,10 @@
     height: 60px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    max-width: 217px;
+    width: 80%;
     border: #bead8e;
-    margin-top: 5px;
+    margin-top: 50px;
     text-transform: uppercase;
     grid-column: 1;
     grid-row: 2;
@@ -1989,23 +1982,21 @@
   .offers__container--box--paragraph {
     color: #777;
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
   }
   .offers__container--box--amenities1, .offers__container--box--amenities2 {
     display: grid;
-    gap: 15px;
     color: #777;
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
   .popular {
-    background-color: #222;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2024,20 +2015,91 @@
     margin-top: 60px;
   }
   .popular__description {
-    color: #fff;
+    color: #000000;
     font-family: "Old Standard TT";
-    font-size: 80px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 80px;
     letter-spacing: -2.4px;
+    margin-top: 5px;
+  }
+  #popular__box {
+    padding: 18px 20px 0px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .ultimate {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  .ultimate__box {
+    position: relative;
+    bottom: -125px;
+    height: 50px;
+  }
+  .offers {
+    width: 70%;
+    margin-top: 100px;
+  }
+  .offers__image {
+    height: 500px;
+  }
+  .offers__container {
+    width: 84%;
+  }
+  .offers__container--text h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .offers__container--prices {
+    top: 30px;
+    right: 50px;
+  }
+  .offers__container--prices h5:first-child {
+    font-size: 30px;
+  }
+  .offers__container--prices h5:last-child {
+    font-size: 40px;
+  }
+  .offers__container--line {
+    margin: 30px auto;
+  }
+  .offers__container--box {
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+  }
+  .offers__container--box--button {
+    margin-top: 5px;
+  }
+  .offers__container--box--paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .offers__container--box--amenities1, .offers__container--box--amenities2 {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .popular {
+    background-color: #222;
+  }
+  .popular__description {
+    color: #fff;
+    font-size: 80px;
     margin-top: 65px;
   }
   .roomsPage__box {
     background-color: #ffffff;
+    transition: transform 0.3s ease;
+    box-shadow: 6px 6px 6px 0px rgba(255, 255, 255, 0.5);
+  }
+  .roomsPage__box:hover {
+    transform: scale(1.05);
   }
   #popular__box {
     width: 75%;
+    padding: 0;
   }
 }
 * {
