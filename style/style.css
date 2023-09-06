@@ -1741,6 +1741,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid #bead8e;
   }
   .pageDetails__container__box--items h4 {
     font-size: 14px;
@@ -1768,7 +1769,7 @@
     font-size: 16px;
   }
   .pageDetails__container__box--image img {
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
   }
 }
