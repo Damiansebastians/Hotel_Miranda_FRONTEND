@@ -1,7 +1,7 @@
-// @import "variables";
-// @import "mixins";
+@import "../variables";
+@import "../mixins";
 
-// // ROOMS
+// ROOMS
 
 // .rooms {
 //   &__title {
@@ -67,32 +67,98 @@
 //   }
 // }
 
-// // Desktop
+// Desktop
 
-// @media only screen and (min-width: 1000px) {
-//   .rooms {
-//     margin: 50px auto;
-//     width: 80%;
-//   }
+@media only screen and (min-width: 1000px) {
+  .pageDetails {
+    width: 80%;
+    padding: 0 20px;
+    max-width: 1210px;
+    margin: 120px auto;
 
-//   .rooms__slider {
-//     height: 800%;
-//   }
+    &__container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 5%;
 
-//   .swiper-slide img {
-//     height: auto;
-//   }
+      &__box {
+        width: 100%;
+        max-width: 770px;
+        padding: 0;
+        position: relative;
 
-//   .ultimate {
-//     display: flex;
-//     justify-content: space-around;
-//     flex-direction: row;
-//     padding-bottom: 30px;
-//   }
+        &--items {
+          position: absolute;
+          top: 0px;
+          left: 0;
+          width: 90%;
+          padding: 10px 30px;
+          background-color: #ffffff;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 
-//   .ultimate__box {
-//     position: relative;
-//     bottom: -125px;
-//     height: 50px;
-//   }
-// }
+          h4 {
+            font-size: 14px;
+            font-family: "Archivo", sans-serif;
+            letter-spacing: 2.8px;
+            color: #777;
+            line-height: 15px;
+          }
+          h2 {
+            font-size: 42px;
+            font-family: "Old Standard TT", sans-serif;
+            line-height: 48px;
+            letter-spacing: -1.44px;
+
+            margin: 12px 0 16px;
+            color: #222;
+          }
+
+          &--price {
+            color: #bead8e;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 40px;
+            display: inline-flex;
+            
+            & sub {
+              font-size: 16px;
+            }
+          }
+        }
+
+        &--image img {
+          margin-top: 50px;
+          width: 100%;
+      }
+      }
+    }
+  }
+
+  //   .rooms {
+  //     margin: 50px auto;
+  //     width: 80%;
+  //   }
+
+  //   .rooms__slider {
+  //     height: 800%;
+  //   }
+
+  //   .swiper-slide img {
+  //     height: auto;
+  //   }
+
+  //   .ultimate {
+  //     display: flex;
+  //     justify-content: space-around;
+  //     flex-direction: row;
+  //     padding-bottom: 30px;
+  //   }
+
+  //   .ultimate__box {
+  //     position: relative;
+  //     bottom: -125px;
+  //     height: 50px;
+  //   }
+}

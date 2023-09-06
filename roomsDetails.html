@@ -60,97 +60,304 @@
             </div>
         </section>
 
-        <!-- ROOMS -->
-        <section class="roomsPage">
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
-            </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
-            </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
+        <!-- PAGE DETAILS -->
+        <div class="pageDetails">
+        <div class="pageDetails__container">
+
+          <section class="pageDetails__container__box">
+            <div class="pageDetails__container__box--items">
+              <div>
+                <h4>DOUBLE BED</h4>
+                <h2>Luxury Double Bed</h2>
+              </div>
+              <div class="pageDetails__container__box--items--price">
+                  <p>$500</p>
+                  <sub>/Night</sub>
+              </div>
             </div>
 
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
-            </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
-            </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
+            <div class="pageDetails__container__box--image">
+              <img src="./assets/rooms/room3.jpg" alt="offer hotel room" />
             </div>
 
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
-            </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
-            </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
-            </div>
 
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
+          </section>
+          <section class="pageDetailsAvailability">
+            <h3 class="pageDetailsAvailability__title">Check Availability</h3>
+            <div class="pageDetailsAvailability__formContainer">
+              <p
+                class="pageDetailsAvailability__formErrorMessage"
+                id="formErrorMessage"
+              >
+                Please, check the remark fields
+              </p>
+              <form class="pageDetailsAvailability__form" id="availabilityForm">
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Check In</label
+                >
+                <input
+                  class="pageDetailsAvailability__form-date"
+                  type="date"
+                  name="checkIn"
+                  id="detailsCheckIn"
+                  value="2023-06-14"
+                />
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Check Out</label
+                >
+                <input
+                  class="pageDetailsAvailability__form-date"
+                  type="date"
+                  name="checkOut"
+                  id="detailsCheckOut"
+                  value="2023-06-16"
+                />
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Full Name</label
+                >
+                <input
+                  class="pageDetailsAvailability__form-text"
+                  type="text"
+                  name="fullName"
+                  id="detailsFullName"
+                  placeholder="Type your name..."
+                />
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Email</label
+                >
+                <input
+                  class="pageDetailsAvailability__form-text"
+                  type="email"
+                  name="email"
+                  id="detailsEmail"
+                  placeholder="Type your email..."
+                />
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Phone</label
+                >
+                <input
+                  class="pageDetailsAvailability__form-text"
+                  type="text"
+                  name="phone"
+                  id="detailsPhone"
+                  placeholder="Type your phone..."
+                />
+                <label class="pageDetailsAvailability__form-label" for="checkIn"
+                  >Message (Special resquest)</label
+                >
+                <textarea
+                  class="pageDetailsAvailability__form-text"
+                  name="message"
+                  id="detailsMessage"
+                  cols="30"
+                  rows="3"
+                  placeholder="Type your message..."
+                ></textarea>
+                <input
+                  class="button button-variant1 pageDetailsAvailability__form-btn"
+                  type="submit"
+                  value="CHECK AVAILABILITY"
+                />
+              </form>
+              <div
+                class="pageDetailsAvailability__modalContainer pageDetailsAvailability__modalContainer-hidden"
+                id="availabilityModal"
+              >
+                <div class="pageDetailsAvailability__modal">
+                  <h2 class="pageDetailsAvailability__modal__title">
+                    ¡Thank you for your request!
+                  </h2>
+                  <p class="pageDetailsAvailability__modal__text">
+                    We have received it correctly. <br />
+                    Someone from our Team will get <br />
+                    back to you very soon.
+                  </p>
+                  <button
+                    class="button button-variant1 pageDetailsAvailability__modal__btn"
+                    id="modalBtn"
+                  >
+                    ACEPT
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
+          </section>
+          <section class="pageDetailsDescription">
+            <p class="pageDetailsDescription__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+              ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </section>
+        </div>
+        <section class="pageDetailsAmenities">
+          <h2 class="pageDetailsAmenities__title">Amenities</h2>
+          <hr />
+          <div class="pageDetailsAmenities__container">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/airCondIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Air Conditioner</p>
             </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/wifiIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">High speed WiFi</p>
             </div>
-
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/breakIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Breakfast</p>
             </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/kitchenIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Kitchen</p>
             </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/cleanIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Cleaning</p>
             </div>
-
-            <div class="roomsPage__image">
-                <img src="./assets/mobile/img/room2.jpg" alt="Room">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/showerIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Shower</p>
             </div>
-            <div class="roomsPage__icons">
-                <img class="roomsPage__icons__image" src="./img/icons__mobile.svg" alt="">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/groscerIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Grocery</p>
             </div>
-            <h4 class="roomsPage__title">Minimal Duplex Room</h4>
-            <p class="roomsPage__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                tempor.</p>
-            <div class="roomsPage__info">
-                <p>$345/Night</p>
-                <p>Booking Now</p>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/bedIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Single bed</p>
             </div>
-
-            <!-- PAGINATION -->
-            <div class="roomsPage__pagination">
-                <img src="./assets/mobile/rooms_pagination_mobile.svg" alt="Pagination">
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/shopIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Shop near</p>
             </div>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/towelIcons.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Towels</p>
+            </div>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/suppotIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">
+                24/7 Online Support
+              </p>
+            </div>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/lockerIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Strong Locker</p>
+            </div>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/securIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Smart Security</p>
+            </div>
+            <div class="pageDetailsAmenities__items">
+              <img
+                class="pageDetailsAmenities__items-img"
+                src="../images/amenities/expertIcon.svg"
+                alt=""
+              />
+              <p class="pageDetailsAmenities__items-text">Expert Team</p>
+            </div>
+          </div>
         </section>
+        <section class="pageDetailsPerson">
+          <div class="pageDetailsPerson__avatar">
+            <img
+              class="pageDetailsPerson__avatar-person"
+              src="../images/avatar1.webp"
+              alt="avatar"
+            />
+          </div>
+          <img
+            class="pageDetailsPerson__avatar-check"
+            src="../images/checkIcon.svg"
+            alt=""
+          />
+          <h3 class="pageDetailsPerson__title">Rosalina D. William</h3>
+          <h6 class="pageDetailsPerson__subtitle">FOUNDER, QUX CO.</h6>
+          <p class="pageDetailsPerson__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </section>
+        <section class="pageDetailsCancellation">
+          <h2 class="pageDetailsCancellation__title">Cancellation</h2>
+          <hr />
+          <p class="pageDetailsCancellation__text">
+            Phasellus volutpat neque a tellus venenatis, a euismod augue
+            facilisis. Fusce ut metus mattis, consequat metus nec, luctus
+            lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to
+            14 days to get a full refund.
+          </p>
+        </section>
+        
+        </section>
+      </div>
+    </main>
+        
 
         <!-- FOOTER -->
         <footer>
