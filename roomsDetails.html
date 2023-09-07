@@ -79,107 +79,32 @@
             <div class="pageDetails__container__box--image">
               <img src="./assets/rooms/room3.jpg" alt="offer hotel room" />
             </div>
-
-
           </section>
-          <section class="pageDetailsAvailability">
-            <h3 class="pageDetailsAvailability__title">Check Availability</h3>
-            <div class="pageDetailsAvailability__formContainer">
-              <p
-                class="pageDetailsAvailability__formErrorMessage"
-                id="formErrorMessage"
-              >
-                Please, check the remark fields
-              </p>
-              <form class="pageDetailsAvailability__form" id="availabilityForm">
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Check In</label
-                >
+
+
+          <section class="pageDetails__container__form">
+            <h3 class="pageDetails__container__form--title">Check Availability</h3>
+              
+              <form>
+                <label class="pageDetails__container__form--label" for="checkIn">Check In</label>
                 <input
-                  class="pageDetailsAvailability__form-date"
+                  class="pageDetails__container__form--input"
                   type="date"
                   name="checkIn"
                   id="detailsCheckIn"
                   value="2023-06-14"
                 />
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Check Out</label
-                >
+                <label class="pageDetails__container__form--label" for="checkIn">Check Out</label>
                 <input
-                  class="pageDetailsAvailability__form-date"
+                  class="pageDetails__container__form--input"
                   type="date"
                   name="checkOut"
                   id="detailsCheckOut"
                   value="2023-06-16"
                 />
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Full Name</label
-                >
-                <input
-                  class="pageDetailsAvailability__form-text"
-                  type="text"
-                  name="fullName"
-                  id="detailsFullName"
-                  placeholder="Type your name..."
-                />
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Email</label
-                >
-                <input
-                  class="pageDetailsAvailability__form-text"
-                  type="email"
-                  name="email"
-                  id="detailsEmail"
-                  placeholder="Type your email..."
-                />
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Phone</label
-                >
-                <input
-                  class="pageDetailsAvailability__form-text"
-                  type="text"
-                  name="phone"
-                  id="detailsPhone"
-                  placeholder="Type your phone..."
-                />
-                <label class="pageDetailsAvailability__form-label" for="checkIn"
-                  >Message (Special resquest)</label
-                >
-                <textarea
-                  class="pageDetailsAvailability__form-text"
-                  name="message"
-                  id="detailsMessage"
-                  cols="30"
-                  rows="3"
-                  placeholder="Type your message..."
-                ></textarea>
-                <input
-                  class="button button-variant1 pageDetailsAvailability__form-btn"
-                  type="submit"
-                  value="CHECK AVAILABILITY"
-                />
+                <button type="submit" class="pageDetails__container__form--btn">Check Availability</button>
               </form>
-              <div
-                class="pageDetailsAvailability__modalContainer pageDetailsAvailability__modalContainer-hidden"
-                id="availabilityModal"
-              >
-                <div class="pageDetailsAvailability__modal">
-                  <h2 class="pageDetailsAvailability__modal__title">
-                    ¡Thank you for your request!
-                  </h2>
-                  <p class="pageDetailsAvailability__modal__text">
-                    We have received it correctly. <br />
-                    Someone from our Team will get <br />
-                    back to you very soon.
-                  </p>
-                  <button
-                    class="button button-variant1 pageDetailsAvailability__modal__btn"
-                    id="modalBtn"
-                  >
-                    ACEPT
-                  </button>
-                </div>
-              </div>
+
             </div>
           </section>
           <section class="pageDetailsDescription">

@@ -1772,6 +1772,62 @@
     margin-top: 60px;
     width: 100%;
   }
+  .pageDetails__container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .pageDetails__container__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pageDetails__container__form--title {
+    color: #222;
+    text-align: right;
+    font-family: "Archivo";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.54px;
+  }
+  .pageDetails__container__form--label {
+    font: normal 700 14px/15.2px "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 15.2px;
+  }
+  .pageDetails__container__form--input {
+    border: none;
+    outline: none;
+    background-color: #f8f8f8;
+    font: normal 400 26px/28.3px "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 15.2px;
+    color: #777;
+    padding: 15px 0 15px 30px;
+    position: relative;
+    max-width: 330px;
+    cursor: text;
+  }
+  .pageDetails__container__form--btn {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 290px;
+    border: #bead8e;
+    margin-top: 20px;
+  }
+  .pageDetails__container__form--btn:hover {
+    transform: scale(1.1);
+  }
 }
 @media only screen and (min-width: 320px) {
   .contact-cards-container {

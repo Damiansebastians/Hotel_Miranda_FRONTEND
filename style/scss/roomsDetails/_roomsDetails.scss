@@ -122,7 +122,7 @@
             font-weight: 700;
             font-size: 40px;
             display: inline-flex;
-            
+
             & sub {
               font-size: 16px;
             }
@@ -132,34 +132,57 @@
         &--image img {
           margin-top: 60px;
           width: 100%;
+        }
       }
+
+      //FORM
+
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &--title {
+          color: #222;
+          text-align: right;
+          font-family: "Archivo";
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: -0.54px;
+        }
+
+        &--label {
+          font: normal 700 14px/15.2px "Archivo", sans-serif;
+          font-size: 14px;
+          line-height: 15.2px;
+        }
+
+        &--input {
+          border: none;
+          outline: none;
+          background-color: #f8f8f8;
+          font: normal 400 26px/28.3px "Archivo", sans-serif;
+          font-size: 14px;
+          line-height: 15.2px;
+          color: #777;
+          padding: 15px 0 15px 30px;
+          position: relative;
+          max-width: 330px;
+          cursor: text;
+        }
+
+        &--btn {
+          @include boton-gold;
+          width: 290px;
+          border: #bead8e;
+          margin-top: 20px;
+        }
       }
     }
   }
-
-  //   .rooms {
-  //     margin: 50px auto;
-  //     width: 80%;
-  //   }
-
-  //   .rooms__slider {
-  //     height: 800%;
-  //   }
-
-  //   .swiper-slide img {
-  //     height: auto;
-  //   }
-
-  //   .ultimate {
-  //     display: flex;
-  //     justify-content: space-around;
-  //     flex-direction: row;
-  //     padding-bottom: 30px;
-  //   }
-
-  //   .ultimate__box {
-  //     position: relative;
-  //     bottom: -125px;
-  //     height: 50px;
-  //   }
 }
