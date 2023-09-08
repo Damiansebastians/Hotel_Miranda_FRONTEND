@@ -171,7 +171,7 @@
           font-size: 14px;
           line-height: 15.2px;
           color: #777;
-          padding: 15px 0 15px 30px;
+          padding: 15px;
           position: relative;
           max-width: 330px;
           cursor: text;
@@ -192,6 +192,45 @@
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
+      }
+    }
+
+    &__amenities {
+      width: 70%;
+      padding: 50px;
+
+      & hr{
+        border: 1px solid #F1F1F1;
+        margin-bottom:40px ;
+      }
+
+      &--title {
+        color: #222;
+        font-family: "Old Standard TT";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+
+      &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &--items {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          margin-bottom: 15px;
+
+          &--text {
+            color: #777;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
       }
     }
   }
