@@ -1724,6 +1724,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 5%;
+    margin-bottom: 100px;
   }
   .pageDetails__container__box {
     width: 100%;
@@ -1741,7 +1742,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid #bead8e;
   }
   .pageDetails__container__box--items h4 {
     font-size: 14px;
@@ -1775,6 +1775,7 @@
   .pageDetails__container form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   .pageDetails__container__form {
     display: flex;
@@ -1827,6 +1828,14 @@
   }
   .pageDetails__container__form--btn:hover {
     transform: scale(1.1);
+  }
+  .pageDetails__container__description {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 320px) {
