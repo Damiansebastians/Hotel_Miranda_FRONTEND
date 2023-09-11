@@ -36,36 +36,29 @@
         justify-content: center;
         flex-direction: column;
         transition: transform 0.3s ease-in-out;
-
-        & .info__content-img {
-          margin: 44px 50px 18px;
-        }
-
-        & .info__content-text {
-          @include info_text;
-          margin-bottom: 38px;
-          text-align: center;
-        }
-      }
-
-      #info__bbq {
-        display: none;
-      }
-
-      #item-gold {
-        background-color: $gold-color;
-
-        p {
-          color: #ffffff;
-        }
       }
     }
+  }
+
+  .info__content-img {
+    margin: 44px 50px 18px;
+  }
+
+  .info__content-text {
+    @include info_text;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+
+  #info__bbq {
+    display: none;
   }
 
   .info__content-item:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+    background-color: #e1e1e1;
   }
 
   .restaurant {
@@ -159,5 +152,4 @@
       margin-bottom: 0px;
     }
   }
-
 }

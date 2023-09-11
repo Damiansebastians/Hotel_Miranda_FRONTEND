@@ -1280,10 +1280,10 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
   }
-  .info__content-item .info__content-img {
+  .info__content-img {
     margin: 44px 50px 18px;
   }
-  .info__content-item .info__content-text {
+  .info__content-text {
     color: #222;
     text-align: center;
     font-size: 12px;
@@ -1295,19 +1295,14 @@
     margin-bottom: 38px;
     text-align: center;
   }
-  .info__content #info__bbq {
+  #info__bbq {
     display: none;
-  }
-  .info__content #item-gold {
-    background-color: #BEAD8E;
-  }
-  .info__content #item-gold p {
-    color: #ffffff;
   }
   .info__content-item:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+    background-color: #e1e1e1;
   }
   .restaurant {
     background: #ffffff;
@@ -1825,6 +1820,7 @@
     width: 290px;
     border: #bead8e;
     margin-top: 20px;
+    text-transform: uppercase;
   }
   .pageDetails__container__form--btn:hover {
     transform: scale(1.1);
@@ -1873,20 +1869,27 @@
   .pageDetails__person {
     margin-left: 0;
     background: #ffffff;
-    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.59);
     padding: 60px 25px 50px;
+    max-width: 370px;
+    position: relative;
   }
   .pageDetails__person__avatar {
-    width: 150px;
+    width: 200px;
     aspect-ratio: 1/1;
-    border-radius: 75px;
+    border-radius: 100px;
     background-color: #d5d5d5;
-    margin: 100px auto 40px;
+    margin: 10px auto 40px;
     position: relative;
     overflow: hidden;
   }
   .pageDetails__person__avatar--image {
     width: 100%;
+  }
+  .pageDetails__person__avatar--check {
+    position: absolute;
+    top: 160px;
+    right: 100px;
   }
 }
 @media only screen and (min-width: 320px) {
