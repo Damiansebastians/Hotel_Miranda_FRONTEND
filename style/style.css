@@ -1713,7 +1713,7 @@
     width: 80%;
     padding: 0 20px;
     max-width: 1210px;
-    margin: 120px auto;
+    margin: 120px auto 60px;
   }
   .pageDetails__container {
     display: grid;
@@ -1746,11 +1746,11 @@
     line-height: 15px;
   }
   .pageDetails__container__box--items h2 {
-    font-size: 42px;
+    font-size: 36px;
     font-family: "Old Standard TT", sans-serif;
     line-height: 48px;
     letter-spacing: -1.44px;
-    margin: 12px 0 16px;
+    margin-top: 12px;
     color: #222;
   }
   .pageDetails__container__box--items--price {
@@ -1867,7 +1867,7 @@
     font-weight: 500;
   }
   .pageDetails__person {
-    margin-left: 0;
+    margin-top: 50px;
     background: #ffffff;
     box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.59);
     padding: 60px 25px 50px;
@@ -1937,7 +1937,7 @@
     margin-bottom: 15px;
   }
   .pageDetails__cancellation hr {
-    border: 1px solid #F1F1F1;
+    border: 1px solid #f1f1f1;
     margin-bottom: 35px;
   }
   .pageDetails__cancellation p {
@@ -1947,6 +1947,28 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+  }
+  .related {
+    padding: 0px 50px;
+  }
+  .related__title {
+    width: 85%;
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 20px auto;
+  }
+  .related__rooms {
+    margin: 20px auto;
+    width: 85%;
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 320px) {
