@@ -1888,8 +1888,55 @@
   }
   .pageDetails__person__avatar--check {
     position: absolute;
-    top: 160px;
-    right: 100px;
+    top: 80px;
+    right: 90px;
+  }
+  .pageDetails__person__title {
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #222;
+    font-weight: 400;
+    letter-spacing: -0.9px;
+    margin-bottom: 16px;
+  }
+  .pageDetails__person__subtitle {
+    text-align: center;
+    color: #bdac8d;
+    font-family: "Archivo";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .pageDetails__person__text {
+    color: #777;
+    text-align: center;
+    font-family: "Archivo";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .pageDetails__cancellation h2 {
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .pageDetails__cancellation p {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -2289,4 +2336,8 @@
 
 body {
   min-width: 320px;
+}
+
+html {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
