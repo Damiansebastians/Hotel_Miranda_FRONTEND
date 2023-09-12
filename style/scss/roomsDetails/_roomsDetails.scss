@@ -233,13 +233,22 @@
     }
 
     &__cancellation {
-       h2 {
+      width: 75%;
+      margin-top: 50px;
+      padding: 50px;
+      h2 {
         color: #222;
         font-family: "Old Standard TT";
         font-size: 30px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
+        margin-bottom: 15px;
+      }
+
+      hr{
+        border: 1px solid #F1F1F1;
+        margin-bottom: 35px;
       }
 
       p {
